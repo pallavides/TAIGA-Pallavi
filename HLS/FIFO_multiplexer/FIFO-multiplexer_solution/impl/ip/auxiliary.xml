@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="FIFO_multiplexer" xd:componentRef="FIFO_multiplexer" xd:initiationInterval="1" xd:clockPeriod="10.000000" xd:sequential="false" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="*(switch_select)" xd:originalName="switch_select" xd:direction="in" xd:interfaceRef="switch_select" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_data_a)" xd:originalName="rx_data_a" xd:direction="in" xd:interfaceRef="rx_data_a" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_ready_a)" xd:originalName="rx_ready_a" xd:direction="out" xd:interfaceRef="rx_ready_a" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_valid_a)" xd:originalName="rx_valid_a" xd:direction="in" xd:interfaceRef="rx_valid_a" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_tlast_a)" xd:originalName="rx_tlast_a" xd:direction="in" xd:interfaceRef="rx_tlast_a" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_data_b)" xd:originalName="rx_data_b" xd:direction="in" xd:interfaceRef="rx_data_b" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_ready_b)" xd:originalName="rx_ready_b" xd:direction="out" xd:interfaceRef="rx_ready_b" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_valid_b)" xd:originalName="rx_valid_b" xd:direction="in" xd:interfaceRef="rx_valid_b" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_tlast_b)" xd:originalName="rx_tlast_b" xd:direction="in" xd:interfaceRef="rx_tlast_b" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_data)" xd:originalName="rx_data" xd:direction="out" xd:interfaceRef="rx_data" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_ready)" xd:originalName="rx_ready" xd:direction="in" xd:interfaceRef="rx_ready" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_valid)" xd:originalName="rx_valid" xd:direction="out" xd:interfaceRef="rx_valid" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(rx_tlast)" xd:originalName="rx_tlast" xd:direction="out" xd:interfaceRef="rx_tlast" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_data_a)" xd:originalName="tx_data_a" xd:direction="out" xd:interfaceRef="tx_data_a" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_ready_a)" xd:originalName="tx_ready_a" xd:direction="in" xd:interfaceRef="tx_ready_a" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_valid_a)" xd:originalName="tx_valid_a" xd:direction="out" xd:interfaceRef="tx_valid_a" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_tlast_a)" xd:originalName="tx_tlast_a" xd:direction="out" xd:interfaceRef="tx_tlast_a" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_data_b)" xd:originalName="tx_data_b" xd:direction="out" xd:interfaceRef="tx_data_b" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_ready_b)" xd:originalName="tx_ready_b" xd:direction="in" xd:interfaceRef="tx_ready_b" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_valid_b)" xd:originalName="tx_valid_b" xd:direction="out" xd:interfaceRef="tx_valid_b" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_tlast_b)" xd:originalName="tx_tlast_b" xd:direction="out" xd:interfaceRef="tx_tlast_b" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_data)" xd:originalName="tx_data" xd:direction="in" xd:interfaceRef="tx_data" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_ready)" xd:originalName="tx_ready" xd:direction="out" xd:interfaceRef="tx_ready" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_valid)" xd:originalName="tx_valid" xd:direction="in" xd:interfaceRef="tx_valid" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="*(tx_tlast)" xd:originalName="tx_tlast" xd:direction="in" xd:interfaceRef="tx_tlast" xd:busTypeRef="register" xd:dataWidth="1" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="105" xd:FF="0" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

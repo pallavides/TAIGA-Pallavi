@@ -1,0 +1,5 @@
+the_ROM_image:
+{
+	[bootloader]/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/fsbl/Debug/fsbl.elf
+	/home/controls/Pallavi/TFTP-boot/sd-boot/u-boot.elf
+}

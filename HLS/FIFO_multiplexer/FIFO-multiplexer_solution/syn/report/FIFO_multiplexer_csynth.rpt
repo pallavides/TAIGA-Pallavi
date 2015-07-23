@@ -1,0 +1,136 @@
+
+
+================================================================
+== Vivado HLS Report for 'FIFO_multiplexer'
+================================================================
+* Date:           Sun Jun  7 15:05:29 2015
+
+* Version:        2015.1 (Build 1215546 on Mon Apr 27 19:24:50 PM 2015)
+* Project:        FIFO_multiplexer
+* Solution:       FIFO-multiplexer_solution
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      0.00|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|    105|
+|Register         |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      0|    105|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|      0|   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +------------+----+-----------+-----+-----------+
+    |    Name    | LUT| Input Size| Bits| Total Bits|
+    +------------+----+-----------+-----+-----------+
+    |rx_data     |  32|          3|   32|         96|
+    |rx_ready_a  |   1|          3|    1|          3|
+    |rx_ready_b  |   1|          3|    1|          3|
+    |rx_tlast    |   1|          3|    1|          3|
+    |rx_valid    |   1|          3|    1|          3|
+    |tx_data_a   |  32|          3|   32|         96|
+    |tx_data_b   |  32|          3|   32|         96|
+    |tx_ready    |   1|          3|    1|          3|
+    |tx_tlast_a  |   1|          3|    1|          3|
+    |tx_tlast_b  |   1|          3|    1|          3|
+    |tx_valid_a  |   1|          3|    1|          3|
+    |tx_valid_b  |   1|          3|    1|          3|
+    +------------+----+-----------+-----+-----------+
+    |Total       | 105|         36|  105|        315|
+    +------------+----+-----------+-----+-----------+
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+---------+---------------+---------+
+|   RTL Ports   | Dir | Bits| Protocol| Source Object |  C Type |
++---------------+-----+-----+---------+---------------+---------+
+|switch_select  |  in |    1| ap_none | switch_select | pointer |
+|rx_data_a      |  in |   32| ap_none |   rx_data_a   | pointer |
+|rx_ready_a     | out |    1| ap_none |   rx_ready_a  | pointer |
+|rx_valid_a     |  in |    1| ap_none |   rx_valid_a  | pointer |
+|rx_tlast_a     |  in |    1| ap_none |   rx_tlast_a  | pointer |
+|rx_data_b      |  in |   32| ap_none |   rx_data_b   | pointer |
+|rx_ready_b     | out |    1| ap_none |   rx_ready_b  | pointer |
+|rx_valid_b     |  in |    1| ap_none |   rx_valid_b  | pointer |
+|rx_tlast_b     |  in |    1| ap_none |   rx_tlast_b  | pointer |
+|rx_data        | out |   32| ap_none |    rx_data    | pointer |
+|rx_ready       |  in |    1| ap_none |    rx_ready   | pointer |
+|rx_valid       | out |    1| ap_none |    rx_valid   | pointer |
+|rx_tlast       | out |    1| ap_none |    rx_tlast   | pointer |
+|tx_data_a      | out |   32| ap_none |   tx_data_a   | pointer |
+|tx_ready_a     |  in |    1| ap_none |   tx_ready_a  | pointer |
+|tx_valid_a     | out |    1| ap_none |   tx_valid_a  | pointer |
+|tx_tlast_a     | out |    1| ap_none |   tx_tlast_a  | pointer |
+|tx_data_b      | out |   32| ap_none |   tx_data_b   | pointer |
+|tx_ready_b     |  in |    1| ap_none |   tx_ready_b  | pointer |
+|tx_valid_b     | out |    1| ap_none |   tx_valid_b  | pointer |
+|tx_tlast_b     | out |    1| ap_none |   tx_tlast_b  | pointer |
+|tx_data        |  in |   32| ap_none |    tx_data    | pointer |
+|tx_ready       | out |    1| ap_none |    tx_ready   | pointer |
+|tx_valid       |  in |    1| ap_none |    tx_valid   | pointer |
+|tx_tlast       |  in |    1| ap_none |    tx_tlast   | pointer |
++---------------+-----+-----+---------+---------------+---------+
+

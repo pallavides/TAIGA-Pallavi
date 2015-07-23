@@ -1,0 +1,433 @@
+
+
+================================================================
+== Vivado HLS Report for 'FIFO_multiplexer'
+================================================================
+* Date:           Sun Jun  7 15:05:29 2015
+
+* Version:        2015.1 (Build 1215546 on Mon Apr 27 19:24:50 PM 2015)
+* Project:        FIFO_multiplexer
+* Solution:       FIFO-multiplexer_solution
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      0.00|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      -|
+|Register         |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 0.00ns
+ST_1: stg_2 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i1* %switch_select) nounwind, !map !0
+
+ST_1: stg_3 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %rx_data_a) nounwind, !map !6
+
+ST_1: stg_4 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_ready_a) nounwind, !map !10
+
+ST_1: stg_5 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_valid_a) nounwind, !map !14
+
+ST_1: stg_6 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_tlast_a) nounwind, !map !18
+
+ST_1: stg_7 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i32* %rx_data_b) nounwind, !map !22
+
+ST_1: stg_8 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_ready_b) nounwind, !map !26
+
+ST_1: stg_9 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_valid_b) nounwind, !map !30
+
+ST_1: stg_10 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_tlast_b) nounwind, !map !34
+
+ST_1: stg_11 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i32* %rx_data) nounwind, !map !38
+
+ST_1: stg_12 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_ready) nounwind, !map !42
+
+ST_1: stg_13 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_valid) nounwind, !map !46
+
+ST_1: stg_14 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %rx_tlast) nounwind, !map !50
+
+ST_1: stg_15 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecBitsMap(i32* %tx_data_a) nounwind, !map !54
+
+ST_1: stg_16 [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_ready_a) nounwind, !map !58
+
+ST_1: stg_17 [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_valid_a) nounwind, !map !62
+
+ST_1: stg_18 [1/1] 0.00ns
+:16  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_tlast_a) nounwind, !map !66
+
+ST_1: stg_19 [1/1] 0.00ns
+:17  call void (...)* @_ssdm_op_SpecBitsMap(i32* %tx_data_b) nounwind, !map !70
+
+ST_1: stg_20 [1/1] 0.00ns
+:18  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_ready_b) nounwind, !map !74
+
+ST_1: stg_21 [1/1] 0.00ns
+:19  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_valid_b) nounwind, !map !78
+
+ST_1: stg_22 [1/1] 0.00ns
+:20  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_tlast_b) nounwind, !map !82
+
+ST_1: stg_23 [1/1] 0.00ns
+:21  call void (...)* @_ssdm_op_SpecBitsMap(i32* %tx_data) nounwind, !map !86
+
+ST_1: stg_24 [1/1] 0.00ns
+:22  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_ready) nounwind, !map !90
+
+ST_1: stg_25 [1/1] 0.00ns
+:23  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_valid) nounwind, !map !94
+
+ST_1: stg_26 [1/1] 0.00ns
+:24  call void (...)* @_ssdm_op_SpecBitsMap(i1* %tx_tlast) nounwind, !map !98
+
+ST_1: stg_27 [1/1] 0.00ns
+:25  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @str) nounwind
+
+ST_1: stg_28 [1/1] 0.00ns
+:26  call void (...)* @_ssdm_op_SpecInterface(i1* %switch_select, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_29 [1/1] 0.00ns
+:27  call void (...)* @_ssdm_op_SpecInterface(i32* %rx_data_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_30 [1/1] 0.00ns
+:28  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_ready_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_31 [1/1] 0.00ns
+:29  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_valid_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_32 [1/1] 0.00ns
+:30  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_tlast_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_33 [1/1] 0.00ns
+:31  call void (...)* @_ssdm_op_SpecInterface(i32* %rx_data_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_34 [1/1] 0.00ns
+:32  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_ready_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_35 [1/1] 0.00ns
+:33  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_valid_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_36 [1/1] 0.00ns
+:34  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_tlast_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_37 [1/1] 0.00ns
+:35  call void (...)* @_ssdm_op_SpecInterface(i32* %rx_data, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_38 [1/1] 0.00ns
+:36  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_ready, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_39 [1/1] 0.00ns
+:37  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_valid, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_40 [1/1] 0.00ns
+:38  call void (...)* @_ssdm_op_SpecInterface(i1* %rx_tlast, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_41 [1/1] 0.00ns
+:39  call void (...)* @_ssdm_op_SpecInterface(i32* %tx_data_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_42 [1/1] 0.00ns
+:40  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_ready_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_43 [1/1] 0.00ns
+:41  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_valid_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_44 [1/1] 0.00ns
+:42  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_tlast_a, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_45 [1/1] 0.00ns
+:43  call void (...)* @_ssdm_op_SpecInterface(i32* %tx_data_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_46 [1/1] 0.00ns
+:44  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_ready_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_47 [1/1] 0.00ns
+:45  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_valid_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_48 [1/1] 0.00ns
+:46  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_tlast_b, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_49 [1/1] 0.00ns
+:47  call void (...)* @_ssdm_op_SpecInterface(i32* %tx_data, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_50 [1/1] 0.00ns
+:48  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_ready, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_51 [1/1] 0.00ns
+:49  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_valid, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_52 [1/1] 0.00ns
+:50  call void (...)* @_ssdm_op_SpecInterface(i1* %tx_tlast, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_53 [1/1] 0.00ns
+:51  call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: switch_select_read [1/1] 0.00ns
+:52  %switch_select_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %switch_select) nounwind
+
+ST_1: stg_55 [1/1] 0.00ns
+:53  br i1 %switch_select_read, label %1, label %2
+
+ST_1: rx_data_a_read [1/1] 0.00ns
+:0  %rx_data_a_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %rx_data_a) nounwind
+
+ST_1: stg_57 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %rx_data, i32 %rx_data_a_read) nounwind
+
+ST_1: rx_valid_a_read [1/1] 0.00ns
+:2  %rx_valid_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_valid_a) nounwind
+
+ST_1: stg_59 [1/1] 0.00ns
+:3  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_valid, i1 %rx_valid_a_read) nounwind
+
+ST_1: rx_ready_read_1 [1/1] 0.00ns
+:4  %rx_ready_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_ready) nounwind
+
+ST_1: stg_61 [1/1] 0.00ns
+:5  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 %rx_ready_read_1) nounwind
+
+ST_1: rx_tlast_a_read [1/1] 0.00ns
+:6  %rx_tlast_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_a) nounwind
+
+ST_1: stg_63 [1/1] 0.00ns
+:7  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_a_read) nounwind
+
+ST_1: tx_ready_a_read [1/1] 0.00ns
+:8  %tx_ready_a_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_a) nounwind
+
+ST_1: stg_65 [1/1] 0.00ns
+:9  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_a_read) nounwind
+
+ST_1: tx_data_read_1 [1/1] 0.00ns
+:10  %tx_data_read_1 = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
+
+ST_1: stg_67 [1/1] 0.00ns
+:11  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 %tx_data_read_1) nounwind
+
+ST_1: tx_valid_read_1 [1/1] 0.00ns
+:12  %tx_valid_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
+
+ST_1: stg_69 [1/1] 0.00ns
+:13  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 %tx_valid_read_1) nounwind
+
+ST_1: tx_tlast_read_1 [1/1] 0.00ns
+:14  %tx_tlast_read_1 = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind
+
+ST_1: stg_71 [1/1] 0.00ns
+:15  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 %tx_tlast_read_1) nounwind
+
+ST_1: stg_72 [1/1] 0.00ns
+:16  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 false) nounwind
+
+ST_1: stg_73 [1/1] 0.00ns
+:17  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 0) nounwind
+
+ST_1: stg_74 [1/1] 0.00ns
+:18  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 false) nounwind
+
+ST_1: stg_75 [1/1] 0.00ns
+:19  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 false) nounwind
+
+ST_1: stg_76 [1/1] 0.00ns
+:20  br label %3
+
+ST_1: rx_data_b_read [1/1] 0.00ns
+:0  %rx_data_b_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %rx_data_b) nounwind
+
+ST_1: stg_78 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %rx_data, i32 %rx_data_b_read) nounwind
+
+ST_1: rx_valid_b_read [1/1] 0.00ns
+:2  %rx_valid_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_valid_b) nounwind
+
+ST_1: stg_80 [1/1] 0.00ns
+:3  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_valid, i1 %rx_valid_b_read) nounwind
+
+ST_1: rx_ready_read [1/1] 0.00ns
+:4  %rx_ready_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_ready) nounwind
+
+ST_1: stg_82 [1/1] 0.00ns
+:5  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_b, i1 %rx_ready_read) nounwind
+
+ST_1: rx_tlast_b_read [1/1] 0.00ns
+:6  %rx_tlast_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %rx_tlast_b) nounwind
+
+ST_1: stg_84 [1/1] 0.00ns
+:7  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_tlast, i1 %rx_tlast_b_read) nounwind
+
+ST_1: tx_ready_b_read [1/1] 0.00ns
+:8  %tx_ready_b_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_ready_b) nounwind
+
+ST_1: stg_86 [1/1] 0.00ns
+:9  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_ready, i1 %tx_ready_b_read) nounwind
+
+ST_1: tx_data_read [1/1] 0.00ns
+:10  %tx_data_read = call i32 @_ssdm_op_Read.ap_none.volatile.i32P(i32* %tx_data) nounwind
+
+ST_1: stg_88 [1/1] 0.00ns
+:11  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_b, i32 %tx_data_read) nounwind
+
+ST_1: tx_valid_read [1/1] 0.00ns
+:12  %tx_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_valid) nounwind
+
+ST_1: stg_90 [1/1] 0.00ns
+:13  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_b, i1 %tx_valid_read) nounwind
+
+ST_1: tx_tlast_read [1/1] 0.00ns
+:14  %tx_tlast_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %tx_tlast) nounwind
+
+ST_1: stg_92 [1/1] 0.00ns
+:15  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_b, i1 %tx_tlast_read) nounwind
+
+ST_1: stg_93 [1/1] 0.00ns
+:16  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %rx_ready_a, i1 false) nounwind
+
+ST_1: stg_94 [1/1] 0.00ns
+:17  call void @_ssdm_op_Write.ap_none.volatile.i32P(i32* %tx_data_a, i32 0) nounwind
+
+ST_1: stg_95 [1/1] 0.00ns
+:18  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_valid_a, i1 false) nounwind
+
+ST_1: stg_96 [1/1] 0.00ns
+:19  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %tx_tlast_a, i1 false) nounwind
+
+ST_1: stg_97 [1/1] 0.00ns
+:20  br label %3
+
+ST_1: stg_98 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

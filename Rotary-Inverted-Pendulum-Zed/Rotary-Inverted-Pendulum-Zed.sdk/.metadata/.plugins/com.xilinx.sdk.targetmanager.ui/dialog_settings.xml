@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="TAIGA_wrapper_hw_platform_0-target"/>
+	<item value="TAIGA_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="TAIGA_wrapper.bit" key="TAIGA_wrapper_hw_platform_0-bitFile"/>
+	<item value="Auto Detect" key="TAIGA_wrapper_hw_platform_0-device"/>
+	<item value="/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/app_ioi/Debug/app_ioi.elf" key="TAIGA_wrapper_hw_platform_0-TAIGA_i/IO_intermediary-initElf"/>
+	<item value="TAIGA_wrapper.mmi" key="TAIGA_wrapper_hw_platform_0-bmmFile"/>
+	<item value="/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/app_backup_controller/Debug/app_backup_controller.elf" key="TAIGA_wrapper_hw_platform_0-TAIGA_i/backup_controller-initElf"/>
+</section>
