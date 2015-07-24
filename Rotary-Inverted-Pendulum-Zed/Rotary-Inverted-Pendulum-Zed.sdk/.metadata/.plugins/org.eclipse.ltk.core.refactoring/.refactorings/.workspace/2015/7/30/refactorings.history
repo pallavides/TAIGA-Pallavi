@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="false" description="Delete 6 resources" element1="/app_production_controller/src/main_production.c" element2="/app_production_controller/src/pendulum_control.c" element3="/app_production_controller/src/pendulum_control.h" element4="/app_production_controller/src/platform_config.h" element5="/app_production_controller/src/production_controller.c" element6="/app_production_controller/src/production_controller.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1437696258001"/>
+</session>

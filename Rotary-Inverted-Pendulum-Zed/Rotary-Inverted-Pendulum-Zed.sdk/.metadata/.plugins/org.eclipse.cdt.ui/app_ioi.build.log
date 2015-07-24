@@ -1,6 +1,6 @@
-19:28:59 **** Incremental Build of configuration Debug for project app_ioi ****
+20:05:12 **** Incremental Build of configuration Debug for project app_ioi ****
 make all 
 make: Nothing to be done for `all'.
 
-19:28:59 Build Finished (took 63ms)
+20:05:12 Build Finished (took 61ms)
 

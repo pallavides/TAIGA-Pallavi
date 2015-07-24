@@ -7,16 +7,19 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
+../src/adversary.c \
 ../src/main_production.c \
 ../src/pendulum_control.c \
 ../src/production_controller.c 
 
 OBJS += \
+./src/adversary.o \
 ./src/main_production.o \
 ./src/pendulum_control.o \
 ./src/production_controller.o 
 
 C_DEPS += \
+./src/adversary.d \
 ./src/main_production.d \
 ./src/pendulum_control.d \
 ./src/production_controller.d 
