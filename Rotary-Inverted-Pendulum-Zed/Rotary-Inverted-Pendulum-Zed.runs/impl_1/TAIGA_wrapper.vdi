@@ -2,8 +2,8 @@
 # Vivado v2015.1 (64-bit)
 # SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
 # IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
-# Start of session at: Thu Jul 23 17:35:38 2015
-# Process ID: 18981
+# Start of session at: Thu Jul 23 19:31:09 2015
+# Process ID: 26222
 # Log file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/TAIGA_wrapper.vdi
 # Journal file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
@@ -14,20 +14,20 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2015.1
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-18981-XPS/dcp/TAIGA_wrapper_early.xdc]
+Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_early.xdc]
 INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd/TAIGA/ip/TAIGA_mdm_1_0/TAIGA_mdm_1_0.xdc:50]
-get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1759.992 ; gain = 476.523 ; free physical = 2820 ; free virtual = 17107
-Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-18981-XPS/dcp/TAIGA_wrapper_early.xdc]
-Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-18981-XPS/dcp/TAIGA_wrapper.xdc]
-Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-18981-XPS/dcp/TAIGA_wrapper.xdc]
-Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-18981-XPS/dcp/TAIGA_wrapper_late.xdc]
-Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-18981-XPS/dcp/TAIGA_wrapper_late.xdc]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1759.992 ; gain = 476.523 ; free physical = 1958 ; free virtual = 16522
+Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_early.xdc]
+Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper.xdc]
+Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper.xdc]
+Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_late.xdc]
+Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_late.xdc]
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1779.664 ; gain = 19.672 ; free physical = 2798 ; free virtual = 17085
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1779.664 ; gain = 19.672 ; free physical = 1939 ; free virtual = 16503
 Restored from archive | CPU: 1.380000 secs | Memory: 18.420067 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1779.664 ; gain = 19.672 ; free physical = 2798 ; free virtual = 17085
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1779.664 ; gain = 19.672 ; free physical = 1939 ; free virtual = 16503
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 302 instances were transformed.
   LUT6_2 => LUT6_2 (LUT5, LUT6): 158 instances
@@ -37,7 +37,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 6 instances
 
 INFO: [Project 1-484] Checkpoint was created with build 1215546
-open_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1779.664 ; gain = 868.906 ; free physical = 2828 ; free virtual = 17085
+open_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 1779.664 ; gain = 868.906 ; free physical = 1968 ; free virtual = 16502
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
@@ -155,7 +155,7 @@ Creating bitstream...
 Writing bitstream ./TAIGA_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] '/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jul 23 17:36:57 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jul 23 19:32:24 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:00:46 ; elapsed = 00:00:43 . Memory (MB): peak = 2161.555 ; gain = 381.887 ; free physical = 2472 ; free virtual = 16733
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 23 17:36:57 2015...
+write_bitstream: Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 2161.555 ; gain = 381.887 ; free physical = 1586 ; free virtual = 16124
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 23 19:32:24 2015...

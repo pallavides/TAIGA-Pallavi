@@ -332,3 +332,28 @@ com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
 17:31:19 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
 17:31:21 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
 17:31:22 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+19:25:56 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1437677383000,  Project:1437063396000
+19:25:56 INFO  : Project TAIGA_wrapper_hw_platform_0's source hardware specification located at /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:25:59 INFO  : Copied contents of /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf into /TAIGA_wrapper_hw_platform_0/system.hdf.
+19:26:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:26:08 INFO  : 
+19:26:11 INFO  : 
+19:26:15 INFO  : 
+19:26:19 INFO  : 
+19:26:20 INFO  : Updating hardware inferred compiler options for app_backup_controller.
+19:26:21 INFO  : Updating hardware inferred compiler options for app_backup_new.
+19:26:21 INFO  : Updating hardware inferred compiler options for app_ioi.
+19:26:22 INFO  : Updating hardware inferred compiler options for app_ioi_new.
+19:26:23 INFO  : Updating hardware inferred compiler options for app_production_controller.
+19:26:24 INFO  : Updating hardware inferred compiler options for fsbl.
+19:26:24 INFO  : Clearing existing target manager status.
+19:26:24 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+19:26:24 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:42:43 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:42:57 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA-Pallavi/repo
+19:43:01 INFO  : Processing command line option -hwspec /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf.
+19:43:02 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+19:43:03 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+19:43:03 INFO  : XSDB server has started successfully.
