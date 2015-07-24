@@ -81,18 +81,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSDKDIR/app_backup_controller/Debug/app_backup_controller.elf">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSDKDIR/app_ioi/Debug/app_ioi.elf">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="IsVisible" Val="1"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_backup_new/Debug/app_backup_new.elf">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSDKDIR/app_backup_new/Debug/app_backup_new.elf"/>
