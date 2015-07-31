@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Sun Jun  7 19:55:53 2015
+//Date        : Wed Jun 17 13:40:24 2015
 //Host        : XPS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA.bd
 //Design      : TAIGA
@@ -860,6 +860,7 @@ module TAIGA
         .Interrupt(IO_intermediary_interrupt_INTERRUPT),
         .Interrupt_Ack(IO_intermediary_interrupt_ACK),
         .Interrupt_Address({IO_intermediary_interrupt_ADDRESS[31],IO_intermediary_interrupt_ADDRESS[30],IO_intermediary_interrupt_ADDRESS[29],IO_intermediary_interrupt_ADDRESS[28],IO_intermediary_interrupt_ADDRESS[27],IO_intermediary_interrupt_ADDRESS[26],IO_intermediary_interrupt_ADDRESS[25],IO_intermediary_interrupt_ADDRESS[24],IO_intermediary_interrupt_ADDRESS[23],IO_intermediary_interrupt_ADDRESS[22],IO_intermediary_interrupt_ADDRESS[21],IO_intermediary_interrupt_ADDRESS[20],IO_intermediary_interrupt_ADDRESS[19],IO_intermediary_interrupt_ADDRESS[18],IO_intermediary_interrupt_ADDRESS[17],IO_intermediary_interrupt_ADDRESS[16],IO_intermediary_interrupt_ADDRESS[15],IO_intermediary_interrupt_ADDRESS[14],IO_intermediary_interrupt_ADDRESS[13],IO_intermediary_interrupt_ADDRESS[12],IO_intermediary_interrupt_ADDRESS[11],IO_intermediary_interrupt_ADDRESS[10],IO_intermediary_interrupt_ADDRESS[9],IO_intermediary_interrupt_ADDRESS[8],IO_intermediary_interrupt_ADDRESS[7],IO_intermediary_interrupt_ADDRESS[6],IO_intermediary_interrupt_ADDRESS[5],IO_intermediary_interrupt_ADDRESS[4],IO_intermediary_interrupt_ADDRESS[3],IO_intermediary_interrupt_ADDRESS[2],IO_intermediary_interrupt_ADDRESS[1],IO_intermediary_interrupt_ADDRESS[0]}),
+        .M0_AXIS_TREADY(GND_1),
         .M_AXI_DP_ARADDR(IO_intermediary_axi_dp_ARADDR),
         .M_AXI_DP_ARPROT(IO_intermediary_axi_dp_ARPROT),
         .M_AXI_DP_ARREADY(IO_intermediary_axi_dp_ARREADY),
@@ -881,6 +882,9 @@ module TAIGA
         .M_AXI_DP_WVALID(IO_intermediary_axi_dp_WVALID),
         .Read_Strobe(IO_intermediary_dlmb_1_READSTROBE),
         .Reset(rst_production_controller_200M_mb_reset),
+        .S0_AXIS_TDATA({GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1}),
+        .S0_AXIS_TLAST(GND_1),
+        .S0_AXIS_TVALID(GND_1),
         .Write_Strobe(IO_intermediary_dlmb_1_WRITESTROBE));
   IO_intermediary_local_memory_imp_1WFO8AI IO_intermediary_local_memory
        (.DLMB_abus(IO_intermediary_dlmb_1_ABUS),
@@ -1641,6 +1645,7 @@ module TAIGA
         .Interrupt(backup_controller_interrupt_INTERRUPT),
         .Interrupt_Ack(backup_controller_interrupt_ACK),
         .Interrupt_Address({backup_controller_interrupt_ADDRESS[31],backup_controller_interrupt_ADDRESS[30],backup_controller_interrupt_ADDRESS[29],backup_controller_interrupt_ADDRESS[28],backup_controller_interrupt_ADDRESS[27],backup_controller_interrupt_ADDRESS[26],backup_controller_interrupt_ADDRESS[25],backup_controller_interrupt_ADDRESS[24],backup_controller_interrupt_ADDRESS[23],backup_controller_interrupt_ADDRESS[22],backup_controller_interrupt_ADDRESS[21],backup_controller_interrupt_ADDRESS[20],backup_controller_interrupt_ADDRESS[19],backup_controller_interrupt_ADDRESS[18],backup_controller_interrupt_ADDRESS[17],backup_controller_interrupt_ADDRESS[16],backup_controller_interrupt_ADDRESS[15],backup_controller_interrupt_ADDRESS[14],backup_controller_interrupt_ADDRESS[13],backup_controller_interrupt_ADDRESS[12],backup_controller_interrupt_ADDRESS[11],backup_controller_interrupt_ADDRESS[10],backup_controller_interrupt_ADDRESS[9],backup_controller_interrupt_ADDRESS[8],backup_controller_interrupt_ADDRESS[7],backup_controller_interrupt_ADDRESS[6],backup_controller_interrupt_ADDRESS[5],backup_controller_interrupt_ADDRESS[4],backup_controller_interrupt_ADDRESS[3],backup_controller_interrupt_ADDRESS[2],backup_controller_interrupt_ADDRESS[1],backup_controller_interrupt_ADDRESS[0]}),
+        .M0_AXIS_TREADY(GND_1),
         .M_AXI_DP_ARADDR(backup_controller_axi_dp_ARADDR),
         .M_AXI_DP_ARPROT(backup_controller_axi_dp_ARPROT),
         .M_AXI_DP_ARREADY(backup_controller_axi_dp_ARREADY),
@@ -1662,6 +1667,9 @@ module TAIGA
         .M_AXI_DP_WVALID(backup_controller_axi_dp_WVALID),
         .Read_Strobe(backup_controller_dlmb_1_READSTROBE),
         .Reset(rst_production_controller_200M_mb_reset),
+        .S0_AXIS_TDATA({GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1,GND_1}),
+        .S0_AXIS_TLAST(GND_1),
+        .S0_AXIS_TVALID(GND_1),
         .Write_Strobe(backup_controller_dlmb_1_WRITESTROBE));
   backup_controller_local_memory_imp_763G5Q backup_controller_local_memory
        (.DLMB_abus(backup_controller_dlmb_1_ABUS),
@@ -1771,8 +1779,6 @@ module TAIGA
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(IO_intermediary_Clk),
         .FCLK_RESET0_N(production_controller_FCLK_RESET0_N),
-        .I2C0_SCL_I(GND_1),
-        .I2C0_SDA_I(GND_1),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(IO_intermediary_Clk),
         .M_AXI_GP0_ARADDR(production_controller_M_AXI_GP0_ARADDR),
@@ -1816,7 +1822,6 @@ module TAIGA
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb),
-        .SDIO0_WP(GND_1),
         .USB0_VBUS_PWRFAULT(GND_1));
   TAIGA_rst_production_controller_200M_0 rst_production_controller_200M
        (.aux_reset_in(VCC_1),

@@ -1,0 +1,125 @@
+18:53:56 INFO  : Processing command line option -hwspec /home/controls/TAIGA/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf.
+18:54:01 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+18:54:02 INFO  : XSDB server has started successfully.
+13:28:07 INFO  : Processing command line option -hwspec /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf.
+13:28:09 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:28:10 INFO  : XSDB server has started successfully.
+13:28:55 INFO  : Processing command line option -hwspec /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf.
+13:28:55 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:28:56 INFO  : XSDB server has started successfully.
+13:29:26 INFO  : Saving repository preferences.
+13:29:26 INFO  : Reading in cores from local repositories: 
+		 /home/controls/TAIGA-Pallavi/repo
+13:29:26 INFO  : Cleaning BSP projects in the workspace.
+13:29:27 INFO  : Saving repository preferences.
+13:32:53 INFO  : BSP Project P/bsp_backup_standalone has been successfully migrated.
+13:33:38 INFO  : BSP Project P/bsp_ioi_standalone has been successfully migrated.
+13:34:33 INFO  : BSP Project P/bsp_production_freertos has been successfully migrated.
+13:35:14 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+13:35:23 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+13:35:24 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+13:36:32 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+13:37:04 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+13:37:18 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+13:37:18 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+13:52:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248446392" && level==0} -index 1' command is executed.
+13:52:22 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+13:53:08 INFO  : ps7_init is completed.
+13:53:08 INFO  : ps7_post_config is completed.
+13:53:09 INFO  : Processor reset is completed for IO_intermediary
+13:53:25 INFO  : Processor reset is completed for ps7_cortexa9_1
+13:53:50 INFO  : Processor reset is completed for backup_controller
+13:54:32 INFO  : Processor reset is completed for backup_controller
+13:54:59 INFO  : IO_intermediary Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:55:03 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '1' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:995)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:503)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:585)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+13:55:03 ERROR : Disconnect target failed.No Target with ID 1 in the System
+
+
+13:55:09 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+15:14:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248446392" && level==0} -index 1' command is executed.
+15:14:41 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:14:54 INFO  : ps7_init is completed.
+15:14:54 INFO  : ps7_post_config is completed.
+15:14:55 INFO  : Processor reset is completed for IO_intermediary
+15:14:56 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '1' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.continueExecution(TM.java:733)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:150)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:606)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:294)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:14:56 ERROR : Disconnect target failed.No Target with ID 1 in the System
+
+
+15:14:56 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:15:13 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+15:15:17 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:15:24 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA-Pallavi/repo
+15:15:28 INFO  : Processing command line option -hwspec /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf.
+15:15:29 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:15:29 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+15:15:30 INFO  : XSDB server has started successfully.
+15:16:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248446392" && level==0} -index 1' command is executed.
+15:16:04 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:16:23 INFO  : ps7_init is completed.
+15:16:23 INFO  : ps7_post_config is completed.
+15:16:24 INFO  : Processor reset is completed for IO_intermediary
+15:16:33 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:16:44 INFO  : Processor reset is completed for backup_controller
+15:18:23 INFO  : Refreshed build settings on project app_production_controller
+15:19:06 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:19:43 INFO  : Processor reset is completed for IO_intermediary
+15:19:58 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:20:07 INFO  : Processor reset is completed for backup_controller
+15:25:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248446392" && level==0} -index 1' command is executed.
+15:25:48 INFO  : FPGA configured successfully with bitstream "/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/download.bit"
+15:25:59 INFO  : ps7_init is completed.
+15:25:59 INFO  : ps7_post_config is completed.
+15:25:59 INFO  : Processor reset is completed for IO_intermediary
+15:26:04 INFO  : Processor reset is completed for ps7_cortexa9_1
+15:27:56 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:53:03 INFO  : Restoring local repository preferences: 
+		 /home/controls/TAIGA-Pallavi/repo
+14:53:08 INFO  : Processing command line option -hwspec /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper.hdf.
+14:53:09 INFO  : Launching XSDB server: xsdb -n -s /opt/Xilinx/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:53:09 INFO  : Checking for hwspec changes in the project TAIGA_wrapper_hw_platform_0.
+14:53:10 INFO  : XSDB server has started successfully.
+14:53:22 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+14:53:27 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+14:53:28 ERROR :  [Hsi 55-1676] Not supported OS. It is supported only for freertos_zynq
+15:28:18 INFO  : Invoking Bootgen: bootgen -image output.bif -o /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/BOOT.bin
+15:28:18 INFO  : Creating new bif file /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/output.bif
+15:28:19 INFO  : Bootgen command execution is done.
+15:29:55 INFO  : Invoking Bootgen: bootgen -image output.bif -o /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/BOOT.bin
+15:29:55 INFO  : Overwriting existing bif file /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/output.bif
+15:29:56 INFO  : Bootgen command execution is done.
+17:43:42 INFO  : Invoking Bootgen: bootgen -image output.bif -o /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/BOOT.bin -w on
+17:43:42 INFO  : Overwriting existing bif file /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/output.bif
+17:43:42 INFO  : Bootgen command execution is done.

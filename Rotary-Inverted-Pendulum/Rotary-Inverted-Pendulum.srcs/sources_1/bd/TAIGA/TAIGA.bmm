@@ -1,7 +1,7 @@
 WORKFLOW_OPERATION simulation,dialog;
 
 DEFINE_MEMORY_TYPE backup_controller_local_memory_lmb_bram_MEM_DEVICE [0x00008000] 32;
-DEFINE_MEMORY_TYPE IO_intermediary_local_memory_lmb_bram_MEM_DEVICE [0x00020000] 32;
+DEFINE_MEMORY_TYPE IO_intermediary_local_memory_lmb_bram_MEM_DEVICE [0x00010000] 32;
 
 ADDRESS_MAP backup_controller MICROBLAZE-LE 100 backup_controller
    ADDRESS_SPACE backup_controller_local_memory_lmb_bram_ADDR_SPACE backup_controller_local_memory_lmb_bram_MEM_DEVICE  [0x00000000:0x00007fff] backup_controller_local_memory/dlmb_bram_if_cntlr
@@ -12,7 +12,7 @@ ADDRESS_MAP backup_controller MICROBLAZE-LE 100 backup_controller
    END_ADDRESS_SPACE;
 END_ADDRESS_MAP;
 ADDRESS_MAP IO_intermediary MICROBLAZE-LE 100 IO_intermediary
-   ADDRESS_SPACE IO_intermediary_local_memory_lmb_bram_ADDR_SPACE IO_intermediary_local_memory_lmb_bram_MEM_DEVICE  [0x00000000:0x0001ffff] IO_intermediary_local_memory/dlmb_bram_if_cntlr
+   ADDRESS_SPACE IO_intermediary_local_memory_lmb_bram_ADDR_SPACE IO_intermediary_local_memory_lmb_bram_MEM_DEVICE  [0x00000000:0x0000ffff] IO_intermediary_local_memory/dlmb_bram_if_cntlr
       BUS_BLOCK
       IO_intermediary_local_memory_lmb_bram_BUS_BLK [31:0] INPUT = "TAIGA_lmb_bram_1.mem";
       

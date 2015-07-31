@@ -29,7 +29,8 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # If you do not already have a project created,
 # you can create a project using the following command:
-#    create_project project_1 myproj -part xc7z010clg400-1
+#    create_project project_1 myproj -part xc7z020clg484-1
+#    set_property BOARD_PART em.avnet.com:zed:part0:1.3 [current_project]
 
 # CHECKING IF PROJECT EXISTS
 if { [get_projects -quiet] eq "" } {
@@ -42,70 +43,38 @@ if { [get_projects -quiet] eq "" } {
 # CHANGE DESIGN NAME HERE
 set design_name TAIGA
 
-# If you do not already have an existing IP Integrator design open,
-# you can create a design using the following command:
-#    create_bd_design $design_name
+# This script was generated for a remote BD.
+set str_bd_folder /home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd
+set str_bd_filepath ${str_bd_folder}/${design_name}/${design_name}.bd
 
-# Creating design if needed
-set errMsg ""
-set nRet 0
-
-set cur_design [current_bd_design -quiet]
-set list_cells [get_bd_cells -quiet]
-
-if { ${design_name} eq "" } {
-   # USE CASES:
-   #    1) Design_name not set
-
-   set errMsg "ERROR: Please set the variable <design_name> to a non-empty value."
-   set nRet 1
-
-} elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
-   # USE CASES:
-   #    2): Current design opened AND is empty AND names same.
-   #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
-   #    4): Current design opened AND is empty AND names diff; design_name exists in project.
-
-   if { $cur_design ne $design_name } {
-      puts "INFO: Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
-      set design_name [get_property NAME $cur_design]
-   }
-   puts "INFO: Constructing design in IPI design <$cur_design>..."
-
-} elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
-   # USE CASES:
-   #    5) Current design opened AND has components AND same names.
-
-   set errMsg "ERROR: Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
-   set nRet 1
-} elseif { [get_files -quiet ${design_name}.bd] ne "" } {
-   # USE CASES: 
-   #    6) Current opened design, has components, but diff names, design_name exists in project.
-   #    7) No opened design, design_name exists in project.
-
-   set errMsg "ERROR: Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
-   set nRet 2
-
-} else {
-   # USE CASES:
-   #    8) No opened design, design_name not in project.
-   #    9) Current opened design, has components, but diff names, design_name not in project.
-
-   puts "INFO: Currently there is no design <$design_name> in project, so creating one..."
-
-   create_bd_design $design_name
-
-   puts "INFO: Making design <$design_name> as current_bd_design."
-   current_bd_design $design_name
-
+# Check if remote design exists on disk
+if { [file exists $str_bd_filepath ] == 1 } {
+   puts "ERROR: The remote BD file path <$str_bd_filepath> already exists!"
+   return 1
 }
 
-puts "INFO: Currently the variable <design_name> is equal to \"$design_name\"."
+# Check if design exists in memory
+set list_existing_designs [get_bd_designs -quiet $design_name]
+if { $list_existing_designs ne "" } {
+   puts "ERROR: The design <$design_name> already exists in this project!"
+   puts "ERROR: Will not create the remote BD <$design_name> at the folder <$str_bd_folder>."
 
-if { $nRet != 0 } {
-   puts $errMsg
-   return $nRet
+   return 1
 }
+
+# Check if design exists on disk within project
+set list_existing_designs [get_files */${design_name}.bd]
+if { $list_existing_designs ne "" } {
+   puts "ERROR: The design <$design_name> already exists in this project at location:"
+   puts "   $list_existing_designs"
+   puts "ERROR: Will not create the remote BD <$design_name> at the folder <$str_bd_folder>."
+
+   return 1
+}
+
+# Now can create the remote BD
+create_bd_design -dir $str_bd_folder $design_name
+current_bd_design $design_name
 
 ##################################################################
 # DESIGN PROCs
@@ -315,7 +284,19 @@ proc create_root_design { parentCell } {
 
   # Create instance: IO_intermediary, and set properties
   set IO_intermediary [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 IO_intermediary ]
-  set_property -dict [ list CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} CONFIG.C_I_LMB {1} CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DIV {1} CONFIG.C_USE_FPU {2} CONFIG.C_USE_HW_MUL {1} CONFIG.C_USE_MSR_INSTR {1} CONFIG.C_USE_PCMP_INSTR {1}  ] $IO_intermediary
+  set_property -dict [ list CONFIG.C_CACHE_BYTE_SIZE {4096} \
+CONFIG.C_DCACHE_BYTE_SIZE {4096} CONFIG.C_DEBUG_ENABLED {1} \
+CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} \
+CONFIG.C_FSL_LINKS {1} CONFIG.C_ICACHE_LINE_LEN {4} \
+CONFIG.C_I_LMB {1} CONFIG.C_MMU_DTLB_SIZE {2} \
+CONFIG.C_MMU_ITLB_SIZE {1} CONFIG.C_MMU_ZONES {2} \
+CONFIG.C_M_AXI_D_BUS_EXCEPTION {0} CONFIG.C_NUMBER_OF_PC_BRK {1} \
+CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DCACHE {0} \
+CONFIG.C_USE_DIV {0} CONFIG.C_USE_FPU {1} \
+CONFIG.C_USE_HW_MUL {0} CONFIG.C_USE_ICACHE {0} \
+CONFIG.C_USE_MSR_INSTR {0} CONFIG.C_USE_PCMP_INSTR {0} \
+CONFIG.C_USE_REORDER_INSTR {0} CONFIG.G_TEMPLATE_LIST {3} \
+CONFIG.G_USE_EXCEPTIONS {0}  ] $IO_intermediary
 
   # Create instance: IO_intermediary_local_memory
   create_hier_cell_IO_intermediary_local_memory [current_bd_instance .] IO_intermediary_local_memory
@@ -393,7 +374,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: backup_controller, and set properties
   set backup_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 backup_controller ]
-  set_property -dict [ list CONFIG.C_CACHE_BYTE_SIZE {8192} CONFIG.C_DCACHE_BYTE_SIZE {8192} CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} CONFIG.C_I_LMB {1} CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DCACHE {0} CONFIG.C_USE_DIV {1} CONFIG.C_USE_FPU {2} CONFIG.C_USE_HW_MUL {1} CONFIG.C_USE_ICACHE {0} CONFIG.C_USE_MSR_INSTR {1} CONFIG.C_USE_PCMP_INSTR {1}  ] $backup_controller
+  set_property -dict [ list CONFIG.C_CACHE_BYTE_SIZE {4096} CONFIG.C_DCACHE_BYTE_SIZE {4096} CONFIG.C_DEBUG_ENABLED {1} CONFIG.C_D_AXI {1} CONFIG.C_D_LMB {1} CONFIG.C_FSL_LINKS {1} CONFIG.C_I_LMB {1} CONFIG.C_MMU_DTLB_SIZE {2} CONFIG.C_MMU_ITLB_SIZE {1} CONFIG.C_MMU_ZONES {2} CONFIG.C_USE_BARREL {1} CONFIG.C_USE_DCACHE {0} CONFIG.C_USE_DIV {0} CONFIG.C_USE_FPU {1} CONFIG.C_USE_HW_MUL {0} CONFIG.C_USE_ICACHE {0} CONFIG.C_USE_MSR_INSTR {0} CONFIG.C_USE_PCMP_INSTR {0} CONFIG.C_USE_REORDER_INSTR {0} CONFIG.G_TEMPLATE_LIST {3}  ] $backup_controller
 
   # Create instance: backup_controller_local_memory
   create_hier_cell_backup_controller_local_memory [current_bd_instance .] backup_controller_local_memory
@@ -420,7 +401,7 @@ proc create_root_design { parentCell } {
 
   # Create instance: production_controller, and set properties
   set production_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 production_controller ]
-  set_property -dict [ list CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/ZYBO_zynq_def-TAIGA.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 12 .. 13}  ] $production_controller
+  set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/zedboard_RevC_v2.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 48 .. 49}  ] $production_controller
 
   # Create instance: rst_production_controller_200M, and set properties
   set rst_production_controller_200M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_production_controller_200M ]
@@ -518,8 +499,8 @@ proc create_root_design { parentCell } {
   create_bd_addr_seg -range 0x10000 -offset 0x44A00000 [get_bd_addr_spaces IO_intermediary/Data] [get_bd_addr_segs axi_quad_spi_plant/AXI_LITE/Reg] SEG_axi_quad_spi_plant_Reg
   create_bd_addr_seg -range 0x10000 -offset 0x40600000 [get_bd_addr_spaces IO_intermediary/Data] [get_bd_addr_segs axi_supervisory_uart/S_AXI/Reg] SEG_axi_uartlite_0_Reg
   create_bd_addr_seg -range 0x10000 -offset 0x41A00000 [get_bd_addr_spaces IO_intermediary/Data] [get_bd_addr_segs axi_wdt_IOI/S_AXI/Reg] SEG_axi_wdt_IOI_Reg
-  create_bd_addr_seg -range 0x20000 -offset 0x0 [get_bd_addr_spaces IO_intermediary/Data] [get_bd_addr_segs IO_intermediary_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] SEG_dlmb_bram_if_cntlr_Mem
-  create_bd_addr_seg -range 0x20000 -offset 0x0 [get_bd_addr_spaces IO_intermediary/Instruction] [get_bd_addr_segs IO_intermediary_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] SEG_ilmb_bram_if_cntlr_Mem
+  create_bd_addr_seg -range 0x10000 -offset 0x0 [get_bd_addr_spaces IO_intermediary/Data] [get_bd_addr_segs IO_intermediary_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] SEG_dlmb_bram_if_cntlr_Mem
+  create_bd_addr_seg -range 0x10000 -offset 0x0 [get_bd_addr_spaces IO_intermediary/Instruction] [get_bd_addr_segs IO_intermediary_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] SEG_ilmb_bram_if_cntlr_Mem
   create_bd_addr_seg -range 0x10000 -offset 0x44A00000 [get_bd_addr_spaces backup_controller/Data] [get_bd_addr_segs axi_fifo_backup/S_AXI/Mem0] SEG_axi_fifo_backup_Mem0
   create_bd_addr_seg -range 0x10000 -offset 0x40000000 [get_bd_addr_spaces backup_controller/Data] [get_bd_addr_segs axi_gpio_backup_controller_out/S_AXI/Reg] SEG_axi_gpio_backup_controller_out_Reg
   create_bd_addr_seg -range 0x10000 -offset 0x41C00000 [get_bd_addr_spaces backup_controller/Data] [get_bd_addr_segs axi_timer_backup_controller/S_AXI/Reg] SEG_axi_timer_backup_controller_Reg

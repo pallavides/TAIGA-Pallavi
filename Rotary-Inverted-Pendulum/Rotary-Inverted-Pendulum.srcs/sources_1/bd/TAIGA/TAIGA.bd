@@ -142,10 +142,11 @@
         <spirit:componentRef spirit:library="ip" spirit:name="processing_system7" spirit:vendor="xilinx.com" spirit:version="5.5"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">TAIGA_processing_system7_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PCW_IMPORT_BOARD_PRESET">/home/controls/TAIGA/repo/ZYBO_zynq_def-TAIGA.xml</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_FPGA0_PERIPHERAL_FREQMHZ">200.000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_IMPORT_BOARD_PRESET">/home/controls/TAIGA/repo/zedboard_RevC_v2.xml</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_QSPI_GRP_SINGLE_SS_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_UART0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="PCW_UART1_UART1_IO">MIO 12 .. 13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PCW_UART1_UART1_IO">MIO 48 .. 49</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -225,13 +226,16 @@
           <spirit:configurableElementValue spirit:referenceId="C_D_AXI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_D_LMB">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_I_LMB">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_MSR_INSTR">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_PCMP_INSTR">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="G_TEMPLATE_LIST">3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_MSR_INSTR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_PCMP_INSTR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_REORDER_INSTR">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_BARREL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_DIV">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_DIV">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DEBUG_ENABLED">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_FSL_LINKS">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -328,13 +332,21 @@
           <spirit:configurableElementValue spirit:referenceId="C_D_AXI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_D_LMB">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_I_LMB">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_MSR_INSTR">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_PCMP_INSTR">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="G_TEMPLATE_LIST">3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="G_USE_EXCEPTIONS">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_MSR_INSTR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_PCMP_INSTR">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_REORDER_INSTR">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_BARREL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_DIV">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_DIV">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_M_AXI_D_BUS_EXCEPTION">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DEBUG_ENABLED">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUMBER_OF_PC_BRK">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_FSL_LINKS">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
         <bd:hdl_attributes/>
       </spirit:componentInstance>
@@ -589,52 +601,52 @@
         <spirit:name>IO_intermediary_Clk</spirit:name>
         <spirit:internalPortReference spirit:componentRef="production_controller" spirit:portRef="FCLK_CLK0"/>
         <spirit:internalPortReference spirit:componentRef="production_controller" spirit:portRef="M_AXI_GP0_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="rst_production_controller_200M" spirit:portRef="slowest_sync_clk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_production_controller_out" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_fifo_production" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="backup_controller" spirit:portRef="Clk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="S00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_intc_backup_controller" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_intc_backup_controller" spirit:portRef="processor_clk"/>
-        <spirit:internalPortReference spirit:componentRef="backup_controller_local_memory" spirit:portRef="LMB_Clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_timer_backup_controller" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_backup_controller_out" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M02_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="IO_intermediary" spirit:portRef="Clk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="S00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_intc_IO_intermediary" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_intc_IO_intermediary" spirit:portRef="processor_clk"/>
-        <spirit:internalPortReference spirit:componentRef="IO_intermediary_local_memory" spirit:portRef="LMB_Clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_fifo_backup" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M03_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_quad_spi_plant" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_quad_spi_plant" spirit:portRef="ext_spi_clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_IOI_out" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M02_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_IOI_in" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M03_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_trigger" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M04_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_wdt_IOI" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M05_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_fifo_IOI" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M06_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M07_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_supervisory_uart" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="fifo_IOI_to_backup" spirit:portRef="s_aclk"/>
         <spirit:internalPortReference spirit:componentRef="fifo_backup_to_IOI" spirit:portRef="s_aclk"/>
         <spirit:internalPortReference spirit:componentRef="fifo_IOI_to_production" spirit:portRef="s_aclk"/>
         <spirit:internalPortReference spirit:componentRef="fifo_production_to_IOI" spirit:portRef="s_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="S00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="S00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="backup_controller_local_memory" spirit:portRef="LMB_Clk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M02_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="S00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="IO_intermediary_local_memory" spirit:portRef="LMB_Clk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M03_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M02_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M03_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M04_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M05_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M06_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M07_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>production_controller_FCLK_RESET0_N</spirit:name>
@@ -644,41 +656,41 @@
       <spirit:adHocConnection>
         <spirit:name>rst_production_controller_200M_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_production_controller_200M" spirit:portRef="peripheral_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_production_controller_out" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_fifo_production" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M01_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="S00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_intc_backup_controller" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_timer_backup_controller" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_backup_controller_out" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M02_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="S00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_intc_IO_intermediary" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_fifo_backup" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M03_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_quad_spi_plant" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_IOI_out" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M02_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_IOI_in" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M03_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_trigger" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M04_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_wdt_IOI" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M05_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_fifo_IOI" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M06_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M07_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_supervisory_uart" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="fifo_IOI_to_backup" spirit:portRef="s_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="fifo_backup_to_IOI" spirit:portRef="s_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="fifo_IOI_to_production" spirit:portRef="s_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="fifo_production_to_IOI" spirit:portRef="s_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="S00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_production_controller" spirit:portRef="M01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="S00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M02_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="S00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_backup_controller" spirit:portRef="M03_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M02_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M03_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M04_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M05_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M06_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axi_periph_IO_intermediary" spirit:portRef="M07_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>rst_production_controller_200M_interconnect_aresetn</spirit:name>
@@ -6698,7 +6710,7 @@
             <spirit:name>SEG_dlmb_bram_if_cntlr_Mem</spirit:name>
             <spirit:displayName>/IO_intermediary_local_memory/dlmb_bram_if_cntlr/SLMB/Mem</spirit:displayName>
             <spirit:addressOffset>0x00000000</spirit:addressOffset>
-            <spirit:range>128K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_quad_spi_plant_Reg</spirit:name>
@@ -6753,7 +6765,7 @@
             <spirit:name>SEG_ilmb_bram_if_cntlr_Mem</spirit:name>
             <spirit:displayName>/IO_intermediary_local_memory/ilmb_bram_if_cntlr/SLMB/Mem</spirit:displayName>
             <spirit:addressOffset>0x00000000</spirit:addressOffset>
-            <spirit:range>128K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>

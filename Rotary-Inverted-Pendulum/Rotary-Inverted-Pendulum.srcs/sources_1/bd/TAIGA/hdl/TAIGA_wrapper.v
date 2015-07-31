@@ -1,7 +1,7 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
-//Date        : Sun Jun  7 19:55:53 2015
+//Date        : Wed Jun 17 13:40:24 2015
 //Host        : XPS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA_wrapper.bd
 //Design      : TAIGA_wrapper

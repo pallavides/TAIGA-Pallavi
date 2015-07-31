@@ -1,0 +1,1078 @@
+13:33:13 **** Build of project bsp_backup_standalone ****
+make -k all 
+Running Make include in backup_controller/libsrc/bram_v4_0/src
+make -C backup_controller/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in backup_controller/libsrc/cpu_v2_3/src
+make -C backup_controller/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in backup_controller/libsrc/gpio_v4_0/src
+make -C backup_controller/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in backup_controller/libsrc/intc_v3_3/src
+make -C backup_controller/libsrc/intc_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in backup_controller/libsrc/llfifo_v4_0/src
+make -C backup_controller/libsrc/llfifo_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in backup_controller/libsrc/standalone_v5_0/src
+make -C backup_controller/libsrc/standalone_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in backup_controller/libsrc/tmrctr_v3_0/src
+make -C backup_controller/libsrc/tmrctr_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in backup_controller/libsrc/bram_v4_0/src
+make -C backup_controller/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in backup_controller/libsrc/cpu_v2_3/src
+make -C backup_controller/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Running Make libs in backup_controller/libsrc/gpio_v4_0/src
+make -C backup_controller/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in backup_controller/libsrc/intc_v3_3/src
+make -C backup_controller/libsrc/intc_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling intc
+Running Make libs in backup_controller/libsrc/llfifo_v4_0/src
+make -C backup_controller/libsrc/llfifo_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling llfifo
+Running Make libs in backup_controller/libsrc/standalone_v5_0/src
+make -C backup_controller/libsrc/standalone_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in backup_controller/libsrc/tmrctr_v3_0/src
+make -C backup_controller/libsrc/tmrctr_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling tmrctr
+Finished building libraries
+13:33:55 **** Build of project bsp_ioi_standalone ****
+make -k all 
+Running Make include in IO_intermediary/libsrc/bram_v4_0/src
+make -C IO_intermediary/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/cpu_v2_3/src
+make -C IO_intermediary/libsrc/cpu_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/gpio_v4_0/src
+make -C IO_intermediary/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/intc_v3_3/src
+make -C IO_intermediary/libsrc/intc_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/llfifo_v4_0/src
+make -C IO_intermediary/libsrc/llfifo_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/spi_v4_1/src
+make -C IO_intermediary/libsrc/spi_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/standalone_v5_0/src
+make -C IO_intermediary/libsrc/standalone_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/uartlite_v3_0/src
+make -C IO_intermediary/libsrc/uartlite_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in IO_intermediary/libsrc/wdttb_v3_0/src
+make -C IO_intermediary/libsrc/wdttb_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in IO_intermediary/libsrc/bram_v4_0/src
+make -C IO_intermediary/libsrc/bram_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in IO_intermediary/libsrc/cpu_v2_3/src
+make -C IO_intermediary/libsrc/cpu_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu
+Running Make libs in IO_intermediary/libsrc/gpio_v4_0/src
+make -C IO_intermediary/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in IO_intermediary/libsrc/intc_v3_3/src
+make -C IO_intermediary/libsrc/intc_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling intc
+Running Make libs in IO_intermediary/libsrc/llfifo_v4_0/src
+make -C IO_intermediary/libsrc/llfifo_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling llfifo
+Running Make libs in IO_intermediary/libsrc/spi_v4_1/src
+make -C IO_intermediary/libsrc/spi_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling spi
+Running Make libs in IO_intermediary/libsrc/standalone_v5_0/src
+make -C IO_intermediary/libsrc/standalone_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in IO_intermediary/libsrc/uartlite_v3_0/src
+make -C IO_intermediary/libsrc/uartlite_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartlite
+Running Make libs in IO_intermediary/libsrc/wdttb_v3_0/src
+make -C IO_intermediary/libsrc/wdttb_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+Compiling wdttb
+Finished building libraries
+13:35:07 **** Build of project bsp_production_freertos ****
+make -k all 
+Running Make include in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src
+make -C ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_1/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/llfifo_v4_0/src
+make -C ps7_cortexa9_1/libsrc/llfifo_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/lwip141_v1_0/src
+make -C ps7_cortexa9_1/libsrc/lwip141_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_1/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_1/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_1/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/standalone_v4_2/src
+make -C ps7_cortexa9_1/libsrc/standalone_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_1/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/xilmfs_v2_0/src
+make -C ps7_cortexa9_1/libsrc/xilmfs_v2_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_1/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_1/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_1/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src
+make -C ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling FreeRTOS
+arm-xilinx-eabi-ar: creating ../../../lib/libfreertos.a
+Running Make libs in ps7_cortexa9_1/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_1/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_1/libsrc/llfifo_v4_0/src
+make -C ps7_cortexa9_1/libsrc/llfifo_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling llfifo
+Running Make libs in ps7_cortexa9_1/libsrc/lwip141_v1_0/src
+make -C ps7_cortexa9_1/libsrc/lwip141_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling lwIP
+Compiling lwIP adapter for Xilinx MAC
+Creating archive liblwip4.a
+clean target for lwip
+Running Make libs in ps7_cortexa9_1/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_1/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_1/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_1/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_1/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_1/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_1/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_1/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_1/libsrc/standalone_v4_2/src
+make -C ps7_cortexa9_1/libsrc/standalone_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_1/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_1/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_1/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_1/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_1/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_1/libsrc/xilmfs_v2_0/src
+make -C ps7_cortexa9_1/libsrc/xilmfs_v2_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Finished building libraries
+
+**** Build of configuration Debug for project app_backup_controller ****
+
+Nothing to build for project app_backup_controller
+
+**** Build of configuration Debug for project app_ioi ****
+
+Nothing to build for project app_ioi
+
+**** Build of configuration Debug for project app_production_controller ****
+
+Nothing to build for project app_production_controller
+
+****  of configuration Debug for project app_backup_controller ****
+
+Nothing to build for project app_backup_controller
+
+****  of configuration Debug for project app_backup_controller ****
+
+Nothing to build for project app_backup_controller
+
+****  of configuration Debug for project app_backup_controller ****
+
+Nothing to build for project app_backup_controller
+
+****  of configuration Debug for project app_backup_controller ****
+
+Nothing to build for project app_backup_controller
+
+****  of configuration Debug for project app_ioi ****
+
+Nothing to build for project app_ioi
+
+****  of configuration Debug for project app_ioi ****
+
+Nothing to build for project app_ioi
+
+****  of configuration Debug for project app_production_controller ****
+
+Nothing to build for project app_production_controller
+
+****  of configuration Debug for project app_production_controller ****
+
+Nothing to build for project app_production_controller
+
+****  of configuration Debug for project app_backup_controller ****
+
+Nothing to build for project app_backup_controller
+13:42:40 **** Auto Build of configuration Debug for project app_backup_controller ****
+make all 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building file: ../src/backup_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/backup_controller.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/backup_controller.d" -MT"src/backup_controller.d" -o "src/backup_controller.o" "../src/backup_controller.c"
+Finished building: ../src/backup_controller.c
+ 
+Building file: ../src/main_backup.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/main_backup.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main_backup.d" -MT"src/main_backup.d" -o "src/main_backup.o" "../src/main_backup.c"
+Finished building: ../src/main_backup.c
+ 
+Building file: ../src/pendulum_control.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_backup_standalone/backup_controller/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/pendulum_control.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/pendulum_control.d" -MT"src/pendulum_control.d" -o "src/pendulum_control.o" "../src/pendulum_control.c"
+../src/pendulum_control.c: In function 'getSetPoint':
+../src/pendulum_control.c:21:10: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+          ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+../src/pendulum_control.c: In function 'readEncoder':
+../src/pendulum_control.c:35:10: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+          ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+../src/pendulum_control.c: In function 'readADC':
+../src/pendulum_control.c:56:10: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+          ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+../src/pendulum_control.c: In function 'getStateInformation':
+../src/pendulum_control.c:108:23: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  int length = dequeue(buffer);
+                       ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+Finished building: ../src/pendulum_control.c
+ 
+Building target: app_backup_controller.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_backup_standalone/backup_controller/lib -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -o "app_backup_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/backup_controller.o ./src/main_backup.o ./src/pendulum_control.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_backup_controller.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_backup_controller.elf  |tee "app_backup_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25724	    372	   2576	  28672	   7000	app_backup_controller.elf
+Finished building: app_backup_controller.elf.size
+ 
+13:43:04 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building file: ../src/utilities/axi_spi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_spi.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_spi.d" -MT"src/utilities/axi_spi.d" -o "src/utilities/axi_spi.o" "../src/utilities/axi_spi.c"
+Finished building: ../src/utilities/axi_spi.c
+ 
+Building file: ../src/utilities/axi_uart.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_uart.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_uart.d" -MT"src/utilities/axi_uart.d" -o "src/utilities/axi_uart.o" "../src/utilities/axi_uart.c"
+Finished building: ../src/utilities/axi_uart.c
+ 
+Building file: ../src/utilities/fifo_queue_wdt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/fifo_queue_wdt.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/fifo_queue_wdt.d" -MT"src/utilities/fifo_queue_wdt.d" -o "src/utilities/fifo_queue_wdt.o" "../src/utilities/fifo_queue_wdt.c"
+../src/utilities/fifo_queue_wdt.c:22:8: warning: type defaults to 'int' in declaration of 'wdt_expired_flag' [-Wimplicit-int]
+ static wdt_expired_flag = false;
+        ^
+../src/utilities/fifo_queue_wdt.c: In function 'dequeue_handler':
+../src/utilities/fifo_queue_wdt.c:193:3: warning: implicit declaration of function 'ioi_handler' [-Wimplicit-function-declaration]
+   ioi_handler(newPacket);
+   ^
+Finished building: ../src/utilities/fifo_queue_wdt.c
+ 
+Building file: ../src/utilities/interrupt_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/interrupt_controller.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/interrupt_controller.d" -MT"src/utilities/interrupt_controller.d" -o "src/utilities/interrupt_controller.o" "../src/utilities/interrupt_controller.c"
+Finished building: ../src/utilities/interrupt_controller.c
+ 
+Building file: ../src/ioi_handler.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/ioi_handler.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/ioi_handler.d" -MT"src/ioi_handler.d" -o "src/ioi_handler.o" "../src/ioi_handler.c"
+../src/ioi_handler.c: In function 'ioi_handler':
+../src/ioi_handler.c:38:21: warning: passing argument 1 of 'get_state_vector' from incompatible pointer type
+    get_state_vector(returnData);
+                     ^
+In file included from ../src/ioi_handler.h:11:0,
+                 from ../src/ioi_handler.c:8:
+../src/pendulum_control.h:35:6: note: expected 'u32 *' but argument is of type 'unsigned int *'
+ void get_state_vector(u32* buffer);
+      ^
+Finished building: ../src/ioi_handler.c
+ 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:99:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building file: ../src/pendulum_control.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/pendulum_control.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/pendulum_control.d" -MT"src/pendulum_control.d" -o "src/pendulum_control.o" "../src/pendulum_control.c"
+Finished building: ../src/pendulum_control.c
+ 
+Building file: ../src/supervisory_communication.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/supervisory_communication.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/supervisory_communication.d" -MT"src/supervisory_communication.d" -o "src/supervisory_communication.o" "../src/supervisory_communication.c"
+../src/supervisory_communication.c: In function 'supervisor_update_set_point':
+../src/supervisory_communication.c:59:5: warning: implicit declaration of function 'set_set_point' [-Wimplicit-function-declaration]
+     set_set_point(setPoint);
+     ^
+Finished building: ../src/supervisory_communication.c
+ 
+Building file: ../src/trigger_mechanisms.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/trigger_mechanisms.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/trigger_mechanisms.d" -MT"src/trigger_mechanisms.d" -o "src/trigger_mechanisms.o" "../src/trigger_mechanisms.c"
+../src/trigger_mechanisms.c: In function 'prediction_trigger_mechanism':
+../src/trigger_mechanisms.c:31:15: warning: unused variable 'delThetaR' [-Wunused-variable]
+  static float delThetaR;
+               ^
+../src/trigger_mechanisms.c:24:21: warning: unused variable 'C' [-Wunused-variable]
+  static const float C[2][4] =  {
+                     ^
+Finished building: ../src/trigger_mechanisms.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o ./src/utilities/interrupt_controller.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47656	    472	   2768	  50896	   c6d0	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+13:43:10 **** Clean-only build of configuration Debug for project app_ioi ****
+make clean 
+rm -rf  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o ./src/utilities/interrupt_controller.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o  ./src/utilities/axi_gpio.d ./src/utilities/axi_spi.d ./src/utilities/axi_uart.d ./src/utilities/fifo_queue_wdt.d ./src/utilities/interrupt_controller.d  ./src/ioi_handler.d ./src/main_ioi.d ./src/pendulum_control.d ./src/supervisory_communication.d ./src/trigger_mechanisms.d  app_ioi.elf.size  app_ioi.elf
+ 
+13:43:10 **** Auto Build of configuration Debug for project app_ioi ****
+make all 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building file: ../src/utilities/axi_spi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_spi.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_spi.d" -MT"src/utilities/axi_spi.d" -o "src/utilities/axi_spi.o" "../src/utilities/axi_spi.c"
+Finished building: ../src/utilities/axi_spi.c
+ 
+Building file: ../src/utilities/axi_uart.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_uart.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/axi_uart.d" -MT"src/utilities/axi_uart.d" -o "src/utilities/axi_uart.o" "../src/utilities/axi_uart.c"
+Finished building: ../src/utilities/axi_uart.c
+ 
+Building file: ../src/utilities/fifo_queue_wdt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/fifo_queue_wdt.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/fifo_queue_wdt.d" -MT"src/utilities/fifo_queue_wdt.d" -o "src/utilities/fifo_queue_wdt.o" "../src/utilities/fifo_queue_wdt.c"
+../src/utilities/fifo_queue_wdt.c:22:8: warning: type defaults to 'int' in declaration of 'wdt_expired_flag' [-Wimplicit-int]
+ static wdt_expired_flag = false;
+        ^
+../src/utilities/fifo_queue_wdt.c: In function 'dequeue_handler':
+../src/utilities/fifo_queue_wdt.c:193:3: warning: implicit declaration of function 'ioi_handler' [-Wimplicit-function-declaration]
+   ioi_handler(newPacket);
+   ^
+Finished building: ../src/utilities/fifo_queue_wdt.c
+ 
+Building file: ../src/utilities/interrupt_controller.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/interrupt_controller.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/utilities/interrupt_controller.d" -MT"src/utilities/interrupt_controller.d" -o "src/utilities/interrupt_controller.o" "../src/utilities/interrupt_controller.c"
+Finished building: ../src/utilities/interrupt_controller.c
+ 
+Building file: ../src/ioi_handler.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/ioi_handler.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/ioi_handler.d" -MT"src/ioi_handler.d" -o "src/ioi_handler.o" "../src/ioi_handler.c"
+../src/ioi_handler.c: In function 'ioi_handler':
+../src/ioi_handler.c:38:21: warning: passing argument 1 of 'get_state_vector' from incompatible pointer type
+    get_state_vector(returnData);
+                     ^
+In file included from ../src/ioi_handler.h:11:0,
+                 from ../src/ioi_handler.c:8:
+../src/pendulum_control.h:35:6: note: expected 'u32 *' but argument is of type 'unsigned int *'
+ void get_state_vector(u32* buffer);
+      ^
+Finished building: ../src/ioi_handler.c
+ 
+Building file: ../src/main_ioi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/main_ioi.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main_ioi.d" -MT"src/main_ioi.d" -o "src/main_ioi.o" "../src/main_ioi.c"
+../src/main_ioi.c: In function 'main':
+../src/main_ioi.c:99:3: warning: implicit declaration of function 'supervisor_update_set_point' [-Wimplicit-function-declaration]
+   supervisor_update_set_point();
+   ^
+Finished building: ../src/main_ioi.c
+ 
+Building file: ../src/pendulum_control.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/pendulum_control.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/pendulum_control.d" -MT"src/pendulum_control.d" -o "src/pendulum_control.o" "../src/pendulum_control.c"
+Finished building: ../src/pendulum_control.c
+ 
+Building file: ../src/supervisory_communication.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/supervisory_communication.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/supervisory_communication.d" -MT"src/supervisory_communication.d" -o "src/supervisory_communication.o" "../src/supervisory_communication.c"
+../src/supervisory_communication.c: In function 'supervisor_update_set_point':
+../src/supervisory_communication.c:59:5: warning: implicit declaration of function 'set_set_point' [-Wimplicit-function-declaration]
+     set_set_point(setPoint);
+     ^
+Finished building: ../src/supervisory_communication.c
+ 
+Building file: ../src/trigger_mechanisms.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../bsp_ioi_standalone/IO_intermediary/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/trigger_mechanisms.o" -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/trigger_mechanisms.d" -MT"src/trigger_mechanisms.d" -o "src/trigger_mechanisms.o" "../src/trigger_mechanisms.c"
+../src/trigger_mechanisms.c: In function 'prediction_trigger_mechanism':
+../src/trigger_mechanisms.c:31:15: warning: unused variable 'delThetaR' [-Wunused-variable]
+  static float delThetaR;
+               ^
+../src/trigger_mechanisms.c:24:21: warning: unused variable 'C' [-Wunused-variable]
+  static const float C[2][4] =  {
+                     ^
+Finished building: ../src/trigger_mechanisms.c
+ 
+Building target: app_ioi.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_ioi_standalone/IO_intermediary/lib -mlittle-endian -mxl-barrel-shift -mcpu=v9.5 -mxl-soft-mul -mhard-float -Wl,--no-relax -o "app_ioi.elf"  ./src/utilities/axi_gpio.o ./src/utilities/axi_spi.o ./src/utilities/axi_uart.o ./src/utilities/fifo_queue_wdt.o ./src/utilities/interrupt_controller.o  ./src/ioi_handler.o ./src/main_ioi.o ./src/pendulum_control.o ./src/supervisory_communication.o ./src/trigger_mechanisms.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app_ioi.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size app_ioi.elf  |tee "app_ioi.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47656	    472	   2768	  50896	   c6d0	app_ioi.elf
+Finished building: app_ioi.elf.size
+ 
+
+****  of configuration Debug for project app_production_controller ****
+
+Nothing to build for project app_production_controller
+13:43:33 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building file: ../src/main_production.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/main_production.o" -MMD -MP -MF"src/main_production.d" -MT"src/main_production.d" -o "src/main_production.o" "../src/main_production.c"
+Finished building: ../src/main_production.c
+ 
+Building file: ../src/pendulum_control.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/pendulum_control.o" -MMD -MP -MF"src/pendulum_control.d" -MT"src/pendulum_control.d" -o "src/pendulum_control.o" "../src/pendulum_control.c"
+../src/pendulum_control.c: In function 'getSetPoint':
+../src/pendulum_control.c:21:2: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+  ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+../src/pendulum_control.c: In function 'readEncoder':
+../src/pendulum_control.c:35:2: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+  ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+../src/pendulum_control.c: In function 'readADC':
+../src/pendulum_control.c:56:2: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+  ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+Finished building: ../src/pendulum_control.c
+ 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:38:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74416	   3152	  23324	 100892	  18a1c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+13:53:01 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:53:01 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+13:53:02 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:53:23 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:53:23 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+13:53:24 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:53:49 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:53:49 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+13:53:49 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:54:30 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:54:30 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+13:54:30 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:54:58 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+13:54:58 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+13:54:58 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:14:50 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:14:50 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:14:50 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:14:54 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:14:55 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:14:55 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:16:16 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:16:17 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:16:17 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:16:32 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:16:32 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:16:32 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:16:42 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:16:42 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:16:43 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:18:24 **** Auto Build of project bsp_production_freertos ****
+make -k all 
+Running Make include in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src
+make -C ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_1/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/llfifo_v4_0/src
+make -C ps7_cortexa9_1/libsrc/llfifo_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/lwip141_v1_0/src
+make -C ps7_cortexa9_1/libsrc/lwip141_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_1/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_1/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_1/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/standalone_v4_2/src
+make -C ps7_cortexa9_1/libsrc/standalone_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_1/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_1/libsrc/xilmfs_v2_0/src
+make -C ps7_cortexa9_1/libsrc/xilmfs_v2_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_1/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_1/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_1/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src
+make -C ps7_cortexa9_1/libsrc/freertos_zynq_v1_02_a/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling FreeRTOS
+arm-xilinx-eabi-ar: creating ../../../lib/libfreertos.a
+Running Make libs in ps7_cortexa9_1/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_1/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_1/libsrc/llfifo_v4_0/src
+make -C ps7_cortexa9_1/libsrc/llfifo_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling llfifo
+Running Make libs in ps7_cortexa9_1/libsrc/lwip141_v1_0/src
+make -C ps7_cortexa9_1/libsrc/lwip141_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling lwIP
+Compiling lwIP adapter for Xilinx MAC
+Creating archive liblwip4.a
+clean target for lwip
+Running Make libs in ps7_cortexa9_1/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_1/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_1/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_1/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_1/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_1/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_1/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_1/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_1/libsrc/standalone_v4_2/src
+make -C ps7_cortexa9_1/libsrc/standalone_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_1/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_1/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_1/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_1/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_1/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_1/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_1/libsrc/xilmfs_v2_0/src
+make -C ps7_cortexa9_1/libsrc/xilmfs_v2_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Finished building libraries
+15:18:37 **** Clean-only build of configuration Debug for project app_production_controller ****
+make clean 
+rm -rf  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o  ./src/utilities/axi_gpio.d ./src/utilities/fifo_queue.d  ./src/main_production.d ./src/pendulum_control.d ./src/production_controller.d  app_production_controller.elf.size  app_production_controller.elf
+ 
+15:18:37 **** Auto Build of configuration Debug for project app_production_controller ****
+make all 
+Building file: ../src/utilities/axi_gpio.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/axi_gpio.o" -I../../bsp_production_freertos/ps7_cortexa9_1/include -MMD -MP -MF"src/utilities/axi_gpio.d" -MT"src/utilities/axi_gpio.d" -o "src/utilities/axi_gpio.o" "../src/utilities/axi_gpio.c"
+Finished building: ../src/utilities/axi_gpio.c
+ 
+Building file: ../src/utilities/fifo_queue.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/utilities/fifo_queue.o" -I../../bsp_production_freertos/ps7_cortexa9_1/include -MMD -MP -MF"src/utilities/fifo_queue.d" -MT"src/utilities/fifo_queue.d" -o "src/utilities/fifo_queue.o" "../src/utilities/fifo_queue.c"
+Finished building: ../src/utilities/fifo_queue.c
+ 
+Building file: ../src/main_production.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/main_production.o" -I../../bsp_production_freertos/ps7_cortexa9_1/include -MMD -MP -MF"src/main_production.d" -MT"src/main_production.d" -o "src/main_production.o" "../src/main_production.c"
+Finished building: ../src/main_production.c
+ 
+Building file: ../src/pendulum_control.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/pendulum_control.o" -I../../bsp_production_freertos/ps7_cortexa9_1/include -MMD -MP -MF"src/pendulum_control.d" -MT"src/pendulum_control.d" -o "src/pendulum_control.o" "../src/pendulum_control.c"
+../src/pendulum_control.c: In function 'getSetPoint':
+../src/pendulum_control.c:21:2: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+  ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+../src/pendulum_control.c: In function 'readEncoder':
+../src/pendulum_control.c:35:2: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+  ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+../src/pendulum_control.c: In function 'readADC':
+../src/pendulum_control.c:56:2: warning: pointer targets in passing argument 1 of 'dequeue' differ in signedness [-Wpointer-sign]
+  dequeue(buffer);
+  ^
+In file included from ../src/pendulum_control.h:11:0,
+                 from ../src/pendulum_control.c:8:
+../src/utilities/fifo_queue.h:22:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int dequeue(int* buffer);
+     ^
+Finished building: ../src/pendulum_control.c
+ 
+Building file: ../src/production_controller.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../bsp_production_freertos/ps7_cortexa9_1/include -I/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/global_includes -c -fmessage-length=0 -MT"src/production_controller.o" -I../../bsp_production_freertos/ps7_cortexa9_1/include -MMD -MP -MF"src/production_controller.d" -MT"src/production_controller.d" -o "src/production_controller.o" "../src/production_controller.c"
+../src/production_controller.c: In function 'startProductionControl':
+../src/production_controller.c:38:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+  xil_printf("Production Controller Timer started\n");
+  ^
+Finished building: ../src/production_controller.c
+ 
+Building target: app_production_controller.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bsp_production_freertos/ps7_cortexa9_1/lib -o "app_production_controller.elf"  ./src/utilities/axi_gpio.o ./src/utilities/fifo_queue.o  ./src/main_production.o ./src/pendulum_control.o ./src/production_controller.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: app_production_controller.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size app_production_controller.elf  |tee "app_production_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74416	   3152	  23324	 100892	  18a1c	app_production_controller.elf
+Finished building: app_production_controller.elf.size
+ 
+15:19:04 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:19:05 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:19:05 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:19:41 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:19:41 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:19:41 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:19:57 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:19:57 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:19:58 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:20:05 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:20:05 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:20:05 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:25:57 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:25:57 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:25:57 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:26:03 **** Incremental Build of configuration Debug for project app_backup_controller ****
+make all 
+make: Nothing to be done for `all'.
+15:26:03 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+15:26:03 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+14:53:51 **** Build of project fsbl_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/llfifo_v4_0/src
+make -C ps7_cortexa9_0/libsrc/llfifo_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling coresightps_dcc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_2/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/llfifo_v4_0/src
+make -C ps7_cortexa9_0/libsrc/llfifo_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling llfifo
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/sdps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v5_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_0/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_1/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_0/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling XilFFs Library
+Creating archive libxilffs.a
+Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src
+make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Finished building libraries
+14:54:01 **** Build of configuration Debug for project fsbl ****
+make all 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_handoff.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/fsbl_hooks.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/image_mover.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/main.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/md5.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/md5.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+Finished building: ../src/md5.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nand.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/nor.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/ps7_init.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/ps7_init.c"
+Finished building: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/qspi.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/rsa.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/sd.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: fsbl.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../fsbl_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+Finished building target: fsbl.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  74340	  11236	  73380	 158956	  26cec	fsbl.elf
+Finished building: fsbl.elf.size
+ 
