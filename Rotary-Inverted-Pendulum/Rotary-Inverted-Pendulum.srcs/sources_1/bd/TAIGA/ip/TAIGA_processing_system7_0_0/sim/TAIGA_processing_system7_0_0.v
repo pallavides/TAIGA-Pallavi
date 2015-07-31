@@ -229,7 +229,11 @@ input PS_PORB;
     .C_S_AXI_HP2_DATA_WIDTH(64),
     .C_S_AXI_HP3_DATA_WIDTH(64),
     .C_HIGH_OCM_EN(0),
+<<<<<<< HEAD
     .C_FCLK_CLK0_FREQ(100.0),
+=======
+    .C_FCLK_CLK0_FREQ(200.0),
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
     .C_FCLK_CLK1_FREQ(142.857132),
     .C_FCLK_CLK2_FREQ(50.0),
     .C_FCLK_CLK3_FREQ(50.0),

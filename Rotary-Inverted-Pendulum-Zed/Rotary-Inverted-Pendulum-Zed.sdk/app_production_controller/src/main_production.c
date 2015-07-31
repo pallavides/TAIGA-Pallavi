@@ -7,6 +7,7 @@
 #include "production_controller.h"
 #include "utilities/axi_gpio.h"
 #include "utilities/fifo_queue.h"
+<<<<<<< HEAD
 
 int main( void )
 {
@@ -21,6 +22,29 @@ int main( void )
 
 	// If all is well, the scheduler will now be running
 	for( ;; );
+=======
+#include "adversary.h"
+
+int main( void )
+{
+	//	prvInitializeExceptions(); // TODO: Not sure why i commented this out. Uncomment and verify
+
+	// Initialize GPIO and FIFOs
+	init_axi_gpio();
+	init_fifo_queues();
+
+	// Starts the production control software timer that executes control sequence
+	startProductionControl();
+
+	// Starts the background adversary task for simulating attacks
+	startAdversaryTask();
+
+	// Start the tasks and timer running. This will handle the switching between tasks and interrupts
+	vTaskStartScheduler();
+
+	// If all is well, the scheduler will now be running
+	for( ;; ); // Always need this in FreeRTOS so that main does not return
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 }
 
 

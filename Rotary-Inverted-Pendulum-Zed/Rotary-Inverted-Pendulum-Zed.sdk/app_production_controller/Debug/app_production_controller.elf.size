@@ -1,2 +1,6 @@
    text	   data	    bss	    dec	    hex	filename
+<<<<<<< HEAD
   74416	   3152	  23324	 100892	  18a1c	app_production_controller.elf
+=======
+  75200	   3152	  23340	 101692	  18d3c	app_production_controller.elf
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45

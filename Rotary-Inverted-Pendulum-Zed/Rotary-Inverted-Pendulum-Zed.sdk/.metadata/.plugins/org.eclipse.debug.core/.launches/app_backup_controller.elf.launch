@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.xilinx.sdk.debug.ui.launchConfigurationWrapper">
 <stringAttribute key="com.xilinx.sdk.gdb.launch.BitStreamPath" value="download.bit"/>
+<<<<<<< HEAD
+=======
+<stringAttribute key="com.xilinx.sdk.gdb.launch.DataFiles" value=""/>
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 <stringAttribute key="com.xilinx.sdk.gdb.launch.DebugType" value="STANDALONE_DEBUG"/>
 <booleanAttribute key="com.xilinx.sdk.gdb.launch.ElfNoDownload" value="false"/>
 <stringAttribute key="com.xilinx.sdk.gdb.launch.HwPlatformName" value="TAIGA_wrapper_hw_platform_0"/>
@@ -13,6 +17,10 @@
 <stringAttribute key="com.xilinx.sdk.gdb.launch.TargetDevice" value="Auto Detect"/>
 <stringAttribute key="com.xilinx.sdk.gdb.launch.TargetPeer" value="Local"/>
 <booleanAttribute key="org.eclipse.cdt.debug.mi.core.REMOTE_TCP" value="true"/>
+<<<<<<< HEAD
+=======
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.verboseMode" value="false"/>
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.xilinx.sdk.debug.core.XMDDebuggerId"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
@@ -28,5 +36,13 @@
 <listEntry value="4"/>
 </listAttribute>
 <booleanAttribute key="xilinx.profile.enable" value="false"/>
+<<<<<<< HEAD
 <booleanAttribute key="xilinx.stdio.connect" value="false"/>
+=======
+<stringAttribute key="xilinx.romem.base" value=""/>
+<stringAttribute key="xilinx.romem.size" value=""/>
+<booleanAttribute key="xilinx.stdio.connect" value="false"/>
+<booleanAttribute key="xilinx.xmd.crosstrigger" value="false"/>
+<booleanAttribute key="xilinx.xmd.safe.mode" value="false"/>
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 </launchConfiguration>

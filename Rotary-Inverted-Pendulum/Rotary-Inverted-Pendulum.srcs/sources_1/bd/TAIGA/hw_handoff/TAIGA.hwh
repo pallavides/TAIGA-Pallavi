@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<<<<<<< HEAD
 <EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 17 13:40:27 2015" VIVADOVERSION="2015.1">
+=======
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jul 23 14:32:33 2015" VIVADOVERSION="2015.1">
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.3" DEVICE="7z020" NAME="TAIGA" PACKAGE="clg484" SPEEDGRADE="-1"/>
 

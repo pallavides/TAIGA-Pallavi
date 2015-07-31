@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 13:33:55 **** Build of project bsp_ioi_standalone ****
+=======
+20:04:53 **** Build of project bsp_ioi_standalone ****
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 make -k all 
 Running Make include in IO_intermediary/libsrc/bram_v4_0/src
 make -C IO_intermediary/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
@@ -48,5 +52,9 @@ make -C IO_intermediary/libsrc/wdttb_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER
 Compiling wdttb
 Finished building libraries
 
+<<<<<<< HEAD
 13:33:58 Build Finished (took 2s.472ms)
+=======
+20:04:56 Build Finished (took 2s.726ms)
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 

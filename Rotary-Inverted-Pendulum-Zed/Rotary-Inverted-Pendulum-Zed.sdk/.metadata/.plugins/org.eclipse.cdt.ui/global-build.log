@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 13:33:13 **** Build of project bsp_backup_standalone ****
 make -k all 
 Running Make include in backup_controller/libsrc/bram_v4_0/src
@@ -1076,3 +1077,8 @@ arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
   74340	  11236	  73380	 158956	  26cec	fsbl.elf
 Finished building: fsbl.elf.size
  
+=======
+20:05:31 **** Incremental Build of configuration Debug for project app_production_controller ****
+make all 
+make: Nothing to be done for `all'.
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45

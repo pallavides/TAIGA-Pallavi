@@ -20,8 +20,12 @@ src/main.o src/main.d: ../src/main.c ../src/fsbl.h \
  ../src/image_mover.h ../../fsbl_bsp/ps7_cortexa9_0/include/xil_cache.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_exception.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h ../src/fsbl_hooks.h \
+<<<<<<< HEAD
  ../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xuartps_hw.h
+=======
+ ../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
 ../src/fsbl.h:
 
@@ -82,5 +86,8 @@ src/main.o src/main.d: ../src/main.c ../src/fsbl.h \
 ../src/fsbl_hooks.h:
 
 ../../fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:
+<<<<<<< HEAD
 
 ../../fsbl_bsp/ps7_cortexa9_0/include/xuartps_hw.h:
+=======
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45

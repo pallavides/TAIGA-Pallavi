@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 14:53:51 **** Build of project fsbl_bsp ****
+=======
+20:05:12 **** Build of project fsbl_bsp ****
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -98,5 +102,9 @@ Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src
 make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Finished building libraries
 
+<<<<<<< HEAD
 14:54:00 Build Finished (took 9s.665ms)
+=======
+20:05:20 Build Finished (took 8s.35ms)
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 

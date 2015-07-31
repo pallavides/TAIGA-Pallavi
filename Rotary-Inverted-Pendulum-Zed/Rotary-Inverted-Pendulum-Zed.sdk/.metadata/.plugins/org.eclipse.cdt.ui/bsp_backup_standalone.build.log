@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 13:33:13 **** Build of project bsp_backup_standalone ****
+=======
+20:04:50 **** Build of project bsp_backup_standalone ****
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 make -k all 
 Running Make include in backup_controller/libsrc/bram_v4_0/src
 make -C backup_controller/libsrc/bram_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mhard-float -mlittle-endian -mno-xl-reorder -mxl-barrel-shift -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
@@ -38,5 +42,9 @@ make -C backup_controller/libsrc/tmrctr_v3_0/src -s libs  "SHELL=/bin/sh" "COMPI
 Compiling tmrctr
 Finished building libraries
 
+<<<<<<< HEAD
 13:33:15 Build Finished (took 2s.236ms)
+=======
+20:04:52 Build Finished (took 2s.69ms)
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 

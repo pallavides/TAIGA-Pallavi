@@ -150,7 +150,11 @@ BEGIN
   U0 : axi_uartlite
     GENERIC MAP (
       C_FAMILY => "zynq",
+<<<<<<< HEAD
       C_S_AXI_ACLK_FREQ_HZ => 100000000,
+=======
+      C_S_AXI_ACLK_FREQ_HZ => 200000000,
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
       C_S_AXI_ADDR_WIDTH => 4,
       C_S_AXI_DATA_WIDTH => 32,
       C_BAUDRATE => 921600,

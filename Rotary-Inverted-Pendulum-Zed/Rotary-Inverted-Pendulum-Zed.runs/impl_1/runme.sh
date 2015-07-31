@@ -37,7 +37,11 @@ EAStep()
 }
 
 # pre-commands:
+<<<<<<< HEAD
 /bin/touch .init_design.begin.rst
+=======
+/bin/touch .write_bitstream.begin.rst
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 EAStep vivado -log TAIGA_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source TAIGA_wrapper.tcl -notrace
 
 

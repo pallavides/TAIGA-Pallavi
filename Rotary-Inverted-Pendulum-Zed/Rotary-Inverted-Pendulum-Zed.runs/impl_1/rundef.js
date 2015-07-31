@@ -27,7 +27,11 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
+<<<<<<< HEAD
 ISETouchFile( "init_design", "begin" );
+=======
+ISETouchFile( "write_bitstream", "begin" );
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 ISEStep( "vivado",
          "-log TAIGA_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source TAIGA_wrapper.tcl -notrace" );
 

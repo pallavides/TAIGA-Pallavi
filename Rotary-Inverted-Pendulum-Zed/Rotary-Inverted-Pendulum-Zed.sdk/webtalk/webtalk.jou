@@ -2,8 +2,13 @@
 # Webtalk v2015.1 (64-bit)
 # SW Build 1215546 on Mon Apr 27 19:19:00 MDT 2015
 # 
+<<<<<<< HEAD
 # Start of session at: Thu Jun 11 19:14:00 2015
 # Process ID: 6118
+=======
+# Start of session at: Thu Jul 23 19:42:42 2015
+# Process ID: 26795
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 # Log file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/webtalk/webtalk.log
 # Journal file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------

@@ -45,6 +45,7 @@ proc step_failed { step } {
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
+<<<<<<< HEAD
 start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
@@ -203,6 +204,20 @@ if {$rc} {
 start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+=======
+start_step write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  debug::add_scope template.lib 1
+  open_checkpoint TAIGA_wrapper_routed.dcp
+  set_property webtalk.parent_dir /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.cache/wt [current_project]
+  add_files /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_backup_new/Debug/app_backup_new.elf
+  set_property SCOPED_TO_REF TAIGA [get_files -all /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_backup_new/Debug/app_backup_new.elf]
+  set_property SCOPED_TO_CELLS backup_controller [get_files -all /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_backup_new/Debug/app_backup_new.elf]
+  add_files /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_ioi_new/Debug/app_ioi_new.elf
+  set_property SCOPED_TO_REF TAIGA [get_files -all /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_ioi_new/Debug/app_ioi_new.elf]
+  set_property SCOPED_TO_CELLS IO_intermediary [get_files -all /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_ioi_new/Debug/app_ioi_new.elf]
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
   catch { write_mem_info -force TAIGA_wrapper.mmi }
   catch { write_bmm -force TAIGA_wrapper_bd.bmm }
   write_bitstream -force TAIGA_wrapper.bit 

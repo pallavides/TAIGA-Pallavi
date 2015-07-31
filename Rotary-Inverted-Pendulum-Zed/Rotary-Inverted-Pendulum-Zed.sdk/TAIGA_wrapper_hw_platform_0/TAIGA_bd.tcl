@@ -44,7 +44,11 @@ if { [get_projects -quiet] eq "" } {
 set design_name TAIGA
 
 # This script was generated for a remote BD.
+<<<<<<< HEAD
 set str_bd_folder /home/controls/TAIGA/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd
+=======
+set str_bd_folder /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 set str_bd_filepath ${str_bd_folder}/${design_name}/${design_name}.bd
 
 # Check if remote design exists on disk
@@ -401,7 +405,11 @@ CONFIG.G_USE_EXCEPTIONS {0}  ] $IO_intermediary
 
   # Create instance: production_controller, and set properties
   set production_controller [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 production_controller ]
+<<<<<<< HEAD
   set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/zedboard_RevC_v2.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 48 .. 49}  ] $production_controller
+=======
+  set_property -dict [ list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200.000000} CONFIG.PCW_IMPORT_BOARD_PRESET {/home/controls/TAIGA/repo/zedboard_RevC_v2.xml} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_TTC1_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART0_PERIPHERAL_ENABLE {0} CONFIG.PCW_UART1_UART1_IO {MIO 48 .. 49}  ] $production_controller
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
   # Create instance: rst_production_controller_200M, and set properties
   set rst_production_controller_200M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_production_controller_200M ]

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
+=======
+	<section name="CleanDialogSettings">
+		<item value="569" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="351" key="DIALOG_HEIGHT"/>
+		<item value="676" key="DIALOG_X_ORIGIN"/>
+		<item value="392" key="DIALOG_Y_ORIGIN"/>
+	</section>
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 	<section name="NewWizardAction">
 	</section>
 </section>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 14:54:01 **** Build of configuration Debug for project fsbl ****
+=======
+20:05:20 **** Build of configuration Debug for project fsbl ****
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 make all 
 Building file: ../src/fsbl_handoff.S
 Invoking: ARM gcc compiler
@@ -38,6 +42,13 @@ Finished building: ../src/nor.c
 Building file: ../src/pcap.c
 Invoking: ARM gcc compiler
 arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"src/pcap.o" -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+<<<<<<< HEAD
+=======
+../src/pcap.c: In function 'FabricInit':
+../src/pcap.c:415:6: warning: variable 'StatusReg' set but not used [-Wunused-but-set-variable]
+  u32 StatusReg;
+      ^
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 Finished building: ../src/pcap.c
  
 Building file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/TAIGA_wrapper_hw_platform_0/ps7_init.c
@@ -68,9 +79,17 @@ Finished building target: fsbl.elf
 Invoking: ARM Print Size
 arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
    text	   data	    bss	    dec	    hex	filename
+<<<<<<< HEAD
   74340	  11236	  73380	 158956	  26cec	fsbl.elf
 Finished building: fsbl.elf.size
  
 
 14:54:02 Build Finished (took 1s.65ms)
+=======
+  71740	  11236	  73380	 156356	  262c4	fsbl.elf
+Finished building: fsbl.elf.size
+ 
+
+20:05:21 Build Finished (took 862ms)
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 

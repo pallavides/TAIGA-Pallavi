@@ -6,8 +6,11 @@ BEGIN OS
  PARAMETER OS_NAME = standalone
  PARAMETER OS_VER = 5.0
  PARAMETER PROC_INSTANCE = ps7_cortexa9_0
+<<<<<<< HEAD
  PARAMETER stdin = ps7_uart_1
  PARAMETER stdout = ps7_uart_1
+=======
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 END
 
 

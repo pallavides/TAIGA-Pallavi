@@ -1,7 +1,11 @@
 //Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
+<<<<<<< HEAD
 //Date        : Wed Jun 17 13:40:24 2015
+=======
+//Date        : Thu Jul 23 14:32:30 2015
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 //Host        : XPS running 64-bit Ubuntu 14.04.2 LTS
 //Command     : generate_target TAIGA.bd
 //Design      : TAIGA

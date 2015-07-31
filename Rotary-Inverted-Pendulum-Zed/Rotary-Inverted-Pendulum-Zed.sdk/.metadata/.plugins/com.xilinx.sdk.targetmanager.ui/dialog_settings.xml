@@ -4,7 +4,13 @@
 	<item value="TAIGA_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
 	<item value="TAIGA_wrapper.bit" key="TAIGA_wrapper_hw_platform_0-bitFile"/>
 	<item value="Auto Detect" key="TAIGA_wrapper_hw_platform_0-device"/>
+<<<<<<< HEAD
 	<item value="bootloop" key="TAIGA_wrapper_hw_platform_0-TAIGA_i/IO_intermediary-initElf"/>
 	<item value="TAIGA_wrapper.mmi" key="TAIGA_wrapper_hw_platform_0-bmmFile"/>
 	<item value="bootloop" key="TAIGA_wrapper_hw_platform_0-TAIGA_i/backup_controller-initElf"/>
+=======
+	<item value="/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/app_ioi/Debug/app_ioi.elf" key="TAIGA_wrapper_hw_platform_0-TAIGA_i/IO_intermediary-initElf"/>
+	<item value="TAIGA_wrapper.mmi" key="TAIGA_wrapper_hw_platform_0-bmmFile"/>
+	<item value="/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.sdk/app_backup_controller/Debug/app_backup_controller.elf" key="TAIGA_wrapper_hw_platform_0-TAIGA_i/backup_controller-initElf"/>
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 </section>

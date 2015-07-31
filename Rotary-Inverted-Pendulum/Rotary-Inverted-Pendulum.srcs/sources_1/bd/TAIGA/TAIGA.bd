@@ -147,6 +147,10 @@
           <spirit:configurableElementValue spirit:referenceId="PCW_QSPI_GRP_SINGLE_SS_ENABLE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_UART0_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PCW_UART1_UART1_IO">MIO 48 .. 49</spirit:configurableElementValue>
+<<<<<<< HEAD
+=======
+          <spirit:configurableElementValue spirit:referenceId="PCW_TTC1_PERIPHERAL_ENABLE">0</spirit:configurableElementValue>
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>

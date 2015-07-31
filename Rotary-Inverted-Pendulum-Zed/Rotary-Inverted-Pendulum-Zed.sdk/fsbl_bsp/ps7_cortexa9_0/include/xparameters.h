@@ -15,8 +15,11 @@
 
 #include "xparameters_ps.h"
 
+<<<<<<< HEAD
 #define STDIN_BASEADDRESS 0xE0001000
 #define STDOUT_BASEADDRESS 0xE0001000
+=======
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
 /******************************************************************/
 
@@ -360,7 +363,11 @@
 /******************************************************************/
 
 /* Definitions for driver TTCPS */
+<<<<<<< HEAD
 #define XPAR_XTTCPS_NUM_INSTANCES 3
+=======
+#define XPAR_XTTCPS_NUM_INSTANCES 6
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
 /* Definitions for peripheral PS7_TTC_0 */
 #define XPAR_PS7_TTC_0_DEVICE_ID 0
@@ -377,6 +384,24 @@
 #define XPAR_PS7_TTC_2_TTC_CLK_CLKSRC 0
 
 
+<<<<<<< HEAD
+=======
+/* Definitions for peripheral PS7_TTC_1 */
+#define XPAR_PS7_TTC_3_DEVICE_ID 3
+#define XPAR_PS7_TTC_3_BASEADDR 0XF8002000
+#define XPAR_PS7_TTC_3_TTC_CLK_FREQ_HZ 111111115
+#define XPAR_PS7_TTC_3_TTC_CLK_CLKSRC 0
+#define XPAR_PS7_TTC_4_DEVICE_ID 4
+#define XPAR_PS7_TTC_4_BASEADDR 0XF8002004
+#define XPAR_PS7_TTC_4_TTC_CLK_FREQ_HZ 111111115
+#define XPAR_PS7_TTC_4_TTC_CLK_CLKSRC 0
+#define XPAR_PS7_TTC_5_DEVICE_ID 5
+#define XPAR_PS7_TTC_5_BASEADDR 0XF8002008
+#define XPAR_PS7_TTC_5_TTC_CLK_FREQ_HZ 111111115
+#define XPAR_PS7_TTC_5_TTC_CLK_CLKSRC 0
+
+
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 /******************************************************************/
 
 /* Canonical definitions for peripheral PS7_TTC_0 */
@@ -395,11 +420,34 @@
 #define XPAR_XTTCPS_2_TTC_CLK_FREQ_HZ 111111115
 #define XPAR_XTTCPS_2_TTC_CLK_CLKSRC 0
 
+<<<<<<< HEAD
+=======
+/* Canonical definitions for peripheral PS7_TTC_1 */
+#define XPAR_XTTCPS_3_DEVICE_ID XPAR_PS7_TTC_3_DEVICE_ID
+#define XPAR_XTTCPS_3_BASEADDR 0xF8002000
+#define XPAR_XTTCPS_3_TTC_CLK_FREQ_HZ 111111115
+#define XPAR_XTTCPS_3_TTC_CLK_CLKSRC 0
+
+#define XPAR_XTTCPS_4_DEVICE_ID XPAR_PS7_TTC_4_DEVICE_ID
+#define XPAR_XTTCPS_4_BASEADDR 0xF8002004
+#define XPAR_XTTCPS_4_TTC_CLK_FREQ_HZ 111111115
+#define XPAR_XTTCPS_4_TTC_CLK_CLKSRC 0
+
+#define XPAR_XTTCPS_5_DEVICE_ID XPAR_PS7_TTC_5_DEVICE_ID
+#define XPAR_XTTCPS_5_BASEADDR 0xF8002008
+#define XPAR_XTTCPS_5_TTC_CLK_FREQ_HZ 111111115
+#define XPAR_XTTCPS_5_TTC_CLK_CLKSRC 0
+
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
 /******************************************************************/
 
 /* Definitions for driver UARTPS */
+<<<<<<< HEAD
 #define XPAR_XUARTPS_NUM_INSTANCES 1
+=======
+#define XPAR_XUARTPS_NUM_INSTANCES 2
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
 /* Definitions for peripheral PS7_UART_1 */
 #define XPAR_PS7_UART_1_DEVICE_ID 0
@@ -409,6 +457,17 @@
 #define XPAR_PS7_UART_1_HAS_MODEM 0
 
 
+<<<<<<< HEAD
+=======
+/* Definitions for peripheral PS7_UART_0 */
+#define XPAR_PS7_UART_0_DEVICE_ID 1
+#define XPAR_PS7_UART_0_BASEADDR 0xE0000000
+#define XPAR_PS7_UART_0_HIGHADDR 0xE0000FFF
+#define XPAR_PS7_UART_0_UART_CLK_FREQ_HZ 50000000
+#define XPAR_PS7_UART_0_HAS_MODEM 0
+
+
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 /******************************************************************/
 
 /* Canonical definitions for peripheral PS7_UART_1 */
@@ -418,6 +477,16 @@
 #define XPAR_XUARTPS_0_UART_CLK_FREQ_HZ 50000000
 #define XPAR_XUARTPS_0_HAS_MODEM 0
 
+<<<<<<< HEAD
+=======
+/* Canonical definitions for peripheral PS7_UART_0 */
+#define XPAR_XUARTPS_1_DEVICE_ID XPAR_PS7_UART_0_DEVICE_ID
+#define XPAR_XUARTPS_1_BASEADDR 0xE0000000
+#define XPAR_XUARTPS_1_HIGHADDR 0xE0000FFF
+#define XPAR_XUARTPS_1_UART_CLK_FREQ_HZ 50000000
+#define XPAR_XUARTPS_1_HAS_MODEM 0
+
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 
 /******************************************************************/
 

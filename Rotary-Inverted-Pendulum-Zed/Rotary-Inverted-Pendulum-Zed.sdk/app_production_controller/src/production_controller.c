@@ -12,10 +12,17 @@
 
 
 float calculateKalmanControlSignal(PlantParameters *params);
+<<<<<<< HEAD
 void production_control_timer(xTimerHandle pxTimer);
 
 /****************** Common Global variables for all ******************/
 volatile unsigned sec1000; // This is updated 1000 times per second by interrupt handler
+=======
+float calculateStateFeedbackControlSignal(PlantParameters *params);
+void production_control_timer(xTimerHandle pxTimer);
+
+/****************** Common Global variables for all ******************/
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 volatile float output_V,theta_R,alpha_R,theta_des;
 volatile float thetaDot=0.,alphaDot=0.;
 
@@ -28,16 +35,27 @@ void startProductionControl(){
 	// Initialize xpre and xhat
 	int i;
 	for(i = 0; i < 4; ++i){
+<<<<<<< HEAD
 		plantParams.xpre[i] = 0.;
 		plantParams.xhat[i] = 0.;
 	}
 	plantParams.cycle_count = 0;
 
 	xTimerHandle ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+=======
+		plantParams.xpre[i] = 0.; // precomputed state vector
+		plantParams.xhat[i] = 0.; // state vector [theta, alpha, thetadot, alphadot]
+	}
+	plantParams.cycle_count = 0;
+
+	// Make sure tick_count is set to 1000 so that each tick is 1 millisecond as seen bellow
+	ProductionControlTimer = xTimerCreate((const signed char *)"Production Controller Timer",1,pdTRUE,(void *) NULL, production_control_timer);
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 	xTimerStart(ProductionControlTimer, 0);
 	xil_printf("Production Controller Timer started\n");
 }
 
+<<<<<<< HEAD
 void production_control_timer(xTimerHandle pxTimer){
 	set_led(LED3, true);
 
@@ -45,12 +63,27 @@ void production_control_timer(xTimerHandle pxTimer){
 	plantParams.set_point = getSetPoint();
 	plantParams.theta_des = plantParams.set_point*pi/180;
 	//xil_printf("SP %d \r\n\r", plantParams.set_point);
+=======
+void production_control_timer(xTimerHandle pxTimer){ // Executed every millisecond
+	set_debug(DEBUG8, true);
+	set_led(LED3, true);
+
+	// Get Set-Point from supervisor through IOI though FIFO
+	set_debug(DEBUG7, true);
+	plantParams.set_point = getSetPoint();
+	plantParams.theta_des = plantParams.set_point*pi/180;
+
+	//xil_printf("%d\n\r", plantParams.set_point); // uncomment if you want to print set-point at each control cycle to reconfig UART
+
+	// Read the two encoder sensors
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 	set_debug(DEBUG7, false);
 	plantParams.encoder_theta = -readEncoder(SS_ENCODER_S) % 4096;
 	plantParams.thetaR = plantParams.encoder_theta*Kenc;
 	set_debug(DEBUG7, true);
 	plantParams.encoder_alpha= 4096+(-readEncoder(SS_ENCODER_P) % 4096);
 	plantParams.alphaR = plantParams.encoder_alpha*Kenc-pi;
+<<<<<<< HEAD
 	set_debug(DEBUG7, false);
 	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
 		plantParams.u = -calculateKalmanControlSignal(&plantParams);
@@ -70,6 +103,30 @@ void production_control_timer(xTimerHandle pxTimer){
 	++plantParams.cycle_count;
 
 	set_led(LED3, false);
+=======
+
+	// Calculate the control algorithm if pendulum is upright
+	set_debug(DEBUG7, false);
+	if((plantParams.alphaR >= 0 ? plantParams.alphaR:-plantParams.alphaR) < (20.*pi/180)){
+		// Comment out whatever controller you don't want to use
+		plantParams.u = calculateKalmanControlSignal(&plantParams);
+		//plantParams.u = calculateStateFeedbackControlSignal(&plantParams);
+	}
+	else {
+		plantParams.u = 0;
+	}
+
+	// Write voltage to the servo
+	set_debug(DEBUG7, true);
+	writeDAC(plantParams.u);
+	set_debug(DEBUG7, false);
+	++plantParams.cycle_count;
+
+	++cycleCounter;
+
+	set_led(LED3, false);
+	set_debug(DEBUG8, false);
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 }
 
 
@@ -110,6 +167,10 @@ float calculateKalmanControlSignal(PlantParameters *params){
 	if(u > 5.)	 u = 5.;
 	else if(u < -5.)	u = -5.;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 	//precompute the part of xhat we can
 	for(ind = 0; ind < 4; ind++){
 		params->xpre[ind] = 0.;
@@ -119,5 +180,25 @@ float calculateKalmanControlSignal(PlantParameters *params){
 		}
 		params->xpre[ind] += Bup[ind]*u;
 	}
+<<<<<<< HEAD
 	return u;
+=======
+
+	params->u = -u;
+	return -u; // don't need to negate u externally to the function
+}
+
+float calculateStateFeedbackControlSignal(PlantParameters *params){
+	if (params->thetaR < -pi)	params->thetaR += 2*pi; // correction for encoder zeroing error
+
+	params->xhat[2] = 0.9391*params->xhat[2] + 60.92*(params->thetaR - params->xhat[0]);
+	params->xhat[3] = 0.9391*params->xhat[3] + 60.92*(params->alphaR - params->xhat[1]);
+
+	params->u = -5.38*(params->thetaR - params->theta_des) + 30.14*params->alphaR-2.65*params->xhat[2] + 3.35*params->xhat[3];
+
+	params->xhat[0] = params->thetaR;
+	params->xhat[1] = params->alphaR;
+
+	return params->u;
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 }

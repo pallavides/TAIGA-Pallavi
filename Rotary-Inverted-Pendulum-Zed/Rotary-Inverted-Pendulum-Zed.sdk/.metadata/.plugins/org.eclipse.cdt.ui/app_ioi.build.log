@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 15:26:03 **** Incremental Build of configuration Debug for project app_ioi ****
 make all 
 make: Nothing to be done for `all'.
 
 15:26:03 Build Finished (took 64ms)
+=======
+20:05:12 **** Incremental Build of configuration Debug for project app_ioi ****
+make all 
+make: Nothing to be done for `all'.
+
+20:05:12 Build Finished (took 61ms)
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 

@@ -762,7 +762,11 @@ BEGIN
   U0 : MicroBlaze
     GENERIC MAP (
       C_SCO => 0,
+<<<<<<< HEAD
       C_FREQ => 100000000,
+=======
+      C_FREQ => 200000000,
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
       C_USE_CONFIG_RESET => 0,
       C_NUM_SYNC_FF_CLK => 2,
       C_NUM_SYNC_FF_CLK_IRQ => 1,
@@ -809,7 +813,11 @@ BEGIN
       C_FSL_EXCEPTION => 0,
       C_USE_STACK_PROTECTION => 0,
       C_IMPRECISE_EXCEPTIONS => 0,
+<<<<<<< HEAD
       C_USE_INTERRUPT => 1,
+=======
+      C_USE_INTERRUPT => 2,
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
       C_USE_EXT_BRK => 0,
       C_USE_EXT_NM_BRK => 0,
       C_USE_MMU => 0,

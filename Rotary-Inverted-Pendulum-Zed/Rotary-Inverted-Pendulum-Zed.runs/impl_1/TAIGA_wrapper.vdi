@@ -2,6 +2,7 @@
 # Vivado v2015.1 (64-bit)
 # SW Build 1215546 on Mon Apr 27 19:07:21 MDT 2015
 # IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+<<<<<<< HEAD
 # Start of session at: Wed Jun 17 13:52:09 2015
 # Process ID: 11716
 # Log file: /home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/TAIGA_wrapper.vdi
@@ -11,10 +12,21 @@ source TAIGA_wrapper.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Netlist 29-17] Analyzing 846 Unisim elements for replacement
+=======
+# Start of session at: Thu Jul 23 19:31:09 2015
+# Process ID: 26222
+# Log file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/TAIGA_wrapper.vdi
+# Journal file: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source TAIGA_wrapper.tcl -notrace
+Command: open_checkpoint TAIGA_wrapper_routed.dcp
+INFO: [Netlist 29-17] Analyzing 844 Unisim elements for replacement
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2015.1
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
+<<<<<<< HEAD
 Parsing XDC File [/home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd/TAIGA/ip/TAIGA_processing_system7_0_0/TAIGA_processing_system7_0_0.xdc] for cell 'TAIGA_i/production_controller/inst'
 Finished Parsing XDC File [/home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd/TAIGA/ip/TAIGA_processing_system7_0_0/TAIGA_processing_system7_0_0.xdc] for cell 'TAIGA_i/production_controller/inst'
 Parsing XDC File [/home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd/TAIGA/ip/TAIGA_axi_gpio_0_0/TAIGA_axi_gpio_0_0_board.xdc] for cell 'TAIGA_i/axi_gpio_production_controller_out/U0'
@@ -95,11 +107,31 @@ INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the fol
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 304 instances were transformed.
   LUT6_2 => LUT6_2 (LUT5, LUT6): 160 instances
+=======
+Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/bd/TAIGA/ip/TAIGA_mdm_1_0/TAIGA_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1759.992 ; gain = 476.523 ; free physical = 1958 ; free virtual = 16522
+Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_early.xdc]
+Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper.xdc]
+Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper.xdc]
+Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_late.xdc]
+Finished Parsing XDC File [/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/.Xil/Vivado-26222-XPS/dcp/TAIGA_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1779.664 ; gain = 19.672 ; free physical = 1939 ; free virtual = 16503
+Restored from archive | CPU: 1.380000 secs | Memory: 18.420067 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1779.664 ; gain = 19.672 ; free physical = 1939 ; free virtual = 16503
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 302 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 158 instances
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 32 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 42 instances
   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 6 instances
 
+<<<<<<< HEAD
 link_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1781.531 ; gain = 868.762 ; free physical = 403 ; free virtual = 19832
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -908,6 +940,10 @@ CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requireme
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
+=======
+INFO: [Project 1-484] Checkpoint was created with build 1215546
+open_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 1779.664 ; gain = 868.906 ; free physical = 1968 ; free virtual = 16502
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
@@ -1011,11 +1047,19 @@ WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The
 WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[10] (net: TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[8][4]) which is driven by a register (TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[11] (net: TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[8][5]) which is driven by a register (TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[12] (net: TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[8][6]) which is driven by a register (TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+<<<<<<< HEAD
 INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 274 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Generating merged BMM file for the design top 'TAIGA_wrapper'...
 INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_5/89e574e2/data/mb_bootloop_le.elf /home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum/Rotary-Inverted-Pendulum.srcs/sources_1/ipshared/xilinx.com/microblaze_v9_5/89e574e2/data/mb_bootloop_le.elf 
+=======
+WARNING: [DRC 23-20] Rule violation (REQP-1839) RAMB36 async control check - The RAMB36E1 TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ADDRARDADDR[13] (net: TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/gc0.count_d1_reg[8][7]) which is driven by a register (TAIGA_i/axi_fifo_production/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 274 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_backup_new/Debug/app_backup_new.elf /home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.srcs/sources_1/imports/Rotary-Inverted-Pendulum-Zed.sdk/app_ioi_new/Debug/app_ioi_new.elf 
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
 Loading data files...
 Loading site data...
 Loading route data...
@@ -1025,7 +1069,14 @@ Creating bitstream...
 Writing bitstream ./TAIGA_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+<<<<<<< HEAD
 INFO: [Common 17-186] '/home/controls/Pallavi/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Jun 17 13:56:30 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream: Time (s): cpu = 00:00:42 ; elapsed = 00:00:41 . Memory (MB): peak = 2394.871 ; gain = 237.445 ; free physical = 175 ; free virtual = 19218
 INFO: [Common 17-206] Exiting Vivado at Wed Jun 17 13:56:30 2015...
+=======
+INFO: [Common 17-186] '/home/controls/TAIGA-Pallavi/Rotary-Inverted-Pendulum-Zed/Rotary-Inverted-Pendulum-Zed.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jul 23 19:32:24 2015. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2015.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 2161.555 ; gain = 381.887 ; free physical = 1586 ; free virtual = 16124
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 23 19:32:24 2015...
+>>>>>>> ef4790edb2c8867b0c01eb2a9ca857e6c4aa2b45
